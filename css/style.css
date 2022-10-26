@@ -413,6 +413,34 @@ form button:hover{
     color: #e53977;
     font-weight: bold;
 }
+.footer{
+    margin-top: 10px;
+    display: flex;
+    background: #FFC5D3;
+    height: 200px;
+}
+.footer-logo{
+    background-image: linear-gradient(#f8f8f8, #FFC4D2);
+    height: 75px;
+    width: 100%;
+}
+.footer-logo img{
+    float: left;
+    width: 70px;
+    height: 70px;
+}
+.footer-logo h1{
+    float: left;
+    font-size: 40px;
+    margin: 15px 7px 0 0;
+}
+.footer-logo p{
+    clear: both;
+    position: relative;
+    left: 70px;
+    bottom: 17%;
+    font-size: 10px;
+}
 
 
 
