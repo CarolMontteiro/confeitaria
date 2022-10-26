@@ -1,0 +1,427 @@
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+section, header, footer{
+    width: 100%;
+    float: left;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '.';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1160px;
+}
+.container:before,
+.container:after{
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+.container:after{
+    clear: both;
+}
+.container{
+    zoom: 1;
+}
+/*####################################################################################################################*/
+/*section do manu*/
+#menu {
+    background-image: linear-gradient(#f8f8f8, #FFC4D2);
+}
+
+#menu .container img{  /*logo*/
+    float: left;
+    width: 128px;
+    height: 125px;
+}
+.container h1{  /*logo texto*/
+    margin-top: 32px;
+    font-size: 47px;
+    font-family: 'Dancing Script', cursive;
+    color: #e53977;
+}
+.container p{
+    margin-top: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgb(72, 70, 70);
+}
+
+.search-box{  /*caixa de pesquisa*/
+    position: absolute;
+    top: 5%;
+    left: 41%;
+    background: white;
+    height: 50px;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
+    -moz-box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
+    box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
+}
+.search-btn i{  /*icone lupa*/
+    color: #e53977;
+    background-color:#FFC4D2;
+    padding: 10px;
+    border-radius: 100%;
+}
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #727070;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.contato-btn {  /*botões links*/
+    position: absolute;
+    top: 5.3%;
+    left: 80%;
+    height: 45px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-1{
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
+    -moz-box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
+    box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
+}
+.btn-2{
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
+    -moz-box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
+    box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
+}
+.btn-1:hover{
+    background-image: linear-gradient(#e53977, #99C8EF);
+}
+.btn-2:hover{
+    background-image: linear-gradient(#e53977, #99C8EF);
+}
+.contato-btn i{
+    color: #e53977;
+    font-weight: 600;
+}
+.contato-btn span{
+    margin: 10px;
+}
+.contato-btn i{
+    background: #FFC4D2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login a{  /*botão login*/
+    color: #E53977;
+    font-weight: bold;
+    background:white;
+    position: absolute;
+    top: 5%;
+    left: 92%;
+    padding: 15.1px;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
+    -moz-box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
+    box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
+}
+.login:hover a{
+    color: white;
+    background: #E53977;
+    transition: 0.4s;
+}
+
+.fixed, li{   /*menu listas*/
+    float: left;
+}
+#menu-item {   /*borda em traços*/
+    border-top: 2px dashed #ce698f;
+    border-bottom: 2px dashed #ce698f;
+    background: white;
+    display: flex;
+}
+ li a, .dropbtn{
+    display: inline-block;
+    color: #642b18;
+    padding: 17px 42.2px;
+    font-weight: bold;
+}
+ .fixed, li {
+     text-align: center;
+ }
+li a:hover, .dropdown:hover .dropbtn{
+    background: #E53977;
+    color: white;
+    transition: 0.4s;
+}
+li .dropdown{
+    display: inline-block;
+}
+.drop-content{
+    display: none;
+    position: absolute;
+    background: rgb(253, 252, 252);
+    width: 15%;
+}
+.drop-content a{
+    color: #642b18;
+    display: block;
+    text-align: left;
+    border: 1px solid white;
+    padding: 14px 8px;
+}
+.dropdown:hover .drop-content{
+    display: block;
+    z-index: 999;
+}
+
+#slides{   /*banner cupcake*/
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+#slides img{
+    position: absolute;
+    width: 100%;
+    top: -31%;
+}
+
+#info-compra{    /*informação de bônus*/
+    margin-top: 10px;
+}
+#info-compra .container{
+    background: #fabfcd;
+}
+.info-compra-box{
+    display: inline-block;
+    width:364px;
+    margin: 10px;
+    padding: 10px;
+}
+.info-compra-box{
+    display: inline-block;
+}
+.img-info img{
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}/*imagens ilustrativas*/
+.info-compra-box h3{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color:white;
+}
+.info-compra-box p{
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #642b18;
+}
+
+#apresentation{ /*mensagem de apresentacão*/
+    padding-top: 10px;
+}
+.apresent{
+    padding: 15px;
+}
+.apresent h2{
+    text-align: center;
+    color: #e53977;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+.apresent p{
+    margin-top: 10px;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    text-transform: inherit;
+    color: #642b18;
+    font-size: 16px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    float: left;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    max-width: 300px;
+    background: white;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.card h3{
+    font-family: 'Dancing Script', cursive;
+    color: #e53977;
+    font-weight: bold;
+    font-size: 25px;
+}
+.card p{
+    text-transform: inherit;
+    font-size: 16px;
+    color: #642b18;
+    margin: 10px 0px;
+}
+.card a{
+    border: none;
+    background: white;
+    padding: 8px 20px;
+    color: #e53977;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.card a:hover{
+    background: #e53977;
+    color: white;
+    font-weight: bold;
+}
+.icon img{
+    width: 252px;
+    height: 287px;
+}
+#email-box{
+    padding: 50px 0;
+    background: #FABFCD;
+}
+.info-email{
+    text-align: center;
+}
+.info-email h1{
+    margin: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    font-weight: bold;
+    color: #e53977;
+    text-align: center;
+
+}
+.info-email input{
+    background: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+}
+.info-email input:focus{
+    outline: none;
+}
+form button{
+    padding: 7px;
+    background: #e53977;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+form button:hover{
+    background: white;
+    color: #e53977;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
