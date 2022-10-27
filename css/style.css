@@ -93,16 +93,34 @@ body{
     width: 128px;
     height: 125px;
 }
-.container h1{  /*logo texto*/
+
+/*css da logo do menu*/
+.padrao-h1-logo-menu{
     margin-top: 32px;
     font-size: 47px;
     font-family: 'Dancing Script', cursive;
     color: #e53977;
 }
-.container p{
+
+.padrao-p-logo-menu{
     margin-top: 1px;
     text-transform: uppercase;
     font-size: 12px;
+    color: rgb(72, 70, 70)
+}
+
+/*css da logo do footer*/
+.padrao-h1-logo-footer{
+    margin-top: 18px;
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+    color: #e53977;
+}
+
+.padrao-p-logo-footer{
+    margin-top: 1px;
+    text-transform: uppercase;
+    font-size: 8px;
     color: rgb(72, 70, 70);
 }
 
@@ -413,33 +431,81 @@ form button:hover{
     color: #e53977;
     font-weight: bold;
 }
-.footer{
-    margin-top: 10px;
-    display: flex;
-    background: #FFC5D3;
-    height: 200px;
+
+
+#footer{
+    margin-top: -4px;
+    padding: 50px 0 0 0;
 }
-.footer-logo{
-    background-image: linear-gradient(#f8f8f8, #FFC4D2);
-    height: 75px;
+
+.box-footer{
+    float: left;
+    width: 36.5%;
+    margin-right: 1%;
+    background-color: red;
+
+}
+
+.box-footer:first-child{
+    float: left;
+    width: 25%;
+}
+
+.box-footer:last-child{
+    margin-right: 0;
+}
+
+.box-footer-content{
+    width: 90%;
+    float: left;
+    margin: 0 5%;
+
+}
+
+.box-footer-img, .box-footer-logo-title{
+    width: 50%;
+    float: left;
+}
+
+.box-footer-img{
+    width: 30%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.box-footer-img img{
+    width: 80%;
+}
+
+.box-footer-logo-title h2{
+    font-size: 25px;
+}
+.box-footer-icons{
+    text-align: center;
     width: 100%;
-}
-.footer-logo img{
     float: left;
-    width: 70px;
-    height: 70px;
+    margin-top: 25px;
 }
-.footer-logo h1{
+.box-footer-icons a{
+    color: #777;
+    margin-right: 15px;
+}
+
+.box-footer-icons span{
+    color: #777
+}
+
+.info-dev{
     float: left;
-    font-size: 40px;
-    margin: 15px 7px 0 0;
-}
-.footer-logo p{
-    clear: both;
-    position: relative;
-    left: 70px;
-    bottom: 17%;
-    font-size: 10px;
+    width: 100%;
+    background-color: #ce698f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+    -webkit-box-shadow: 0px 6px 30px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 6px 30px 0px rgba(0,0,0,0.55);
+    box-shadow: 0px 6px 30px 0px rgba(0,0,0,0.55);
 }
 
 
