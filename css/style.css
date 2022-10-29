@@ -14,7 +14,6 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
@@ -40,7 +39,6 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '.';
     content: none;
 }
 table {
@@ -165,7 +163,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.btn-1{
+.btn-1, .btn-2 {
     background: white;
     width: 50px;
     height: 50px;
@@ -177,18 +175,7 @@ body{
     -moz-box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
     box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
 }
-.btn-2{
-    background: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
-    -moz-box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
-    box-shadow: 10px 10px 30px -6px rgba(0,0,0,0.39);
-}
+
 .btn-1:hover{
     background-image: linear-gradient(#e53977, #99C8EF);
 }
@@ -234,6 +221,12 @@ body{
 .fixed, li{   /*menu listas*/
     float: left;
 }
+
+.fixed li a:hover{   /*menu listas*/
+    background: #E53977;
+    color: white;
+    transition: 0.4s;
+}
 #menu-item {   /*borda em traços*/
     border-top: 2px dashed #ce698f;
     border-bottom: 2px dashed #ce698f;
@@ -249,7 +242,7 @@ body{
  .fixed, li {
      text-align: center;
  }
-li a:hover, .dropdown:hover .dropbtn{
+#menu-item li a:hover, .dropdown:hover .dropbtn{
     background: #E53977;
     color: white;
     transition: 0.4s;
@@ -347,6 +340,7 @@ li .dropdown{
     justify-content: center;
 }
 .card{
+    display: flex;
     float: left;
     align-items: center;
     text-align: center;
@@ -385,8 +379,9 @@ li .dropdown{
     font-weight: bold;
 }
 .icon img{
-    width: 252px;
-    height: 287px;
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 #email-box{
     padding: 50px 0;
@@ -432,67 +427,84 @@ form button:hover{
     font-weight: bold;
 }
 
-
 #footer{
     margin-top: -4px;
-    padding: 50px 0 0 0;
-}
-
-.box-footer{
-    float: left;
-    width: 36.5%;
-    margin-right: 1%;
-    background-color: red;
-
-}
-
-.box-footer:first-child{
-    float: left;
-    width: 25%;
-}
-
-.box-footer:last-child{
-    margin-right: 0;
 }
 
 .box-footer-content{
-    width: 90%;
-    float: left;
-    margin: 0 5%;
-
-}
-
-.box-footer-img, .box-footer-logo-title{
-    width: 50%;
-    float: left;
-}
-
-.box-footer-img{
-    width: 30%;
-    margin-left: 10%;
-    text-align: center;
-}
-
-.box-footer-img img{
-    width: 80%;
-}
-
-.box-footer-logo-title h2{
-    font-size: 25px;
-}
-.box-footer-icons{
-    text-align: center;
     width: 100%;
     float: left;
-    margin-top: 25px;
+    background-image: linear-gradient(#f8f8f8, #FFC4D2);
+}
+.box-footer-img, .box-footer-logo-title{
+    float: left;
+}
+.box-footer-logo-title{
+    margin-top: 10px;
+}
+.box-footer-img{
+    margin: 2px;
+}
+.box-footer-img img{
+    width: 90px;
+    height: 90px;
+}
+.box-footer-logo-title h2{
+    font-size: 30px;
+}
+.box-footer{
+    margin-top: 50px;
+    float: left;
+    width: 32%;
+    margin-right: 1%;
+}
+
+.link-suporte{
+    width: 100%;
+    float: left;
+    padding: 12px;
+}
+.box-footer h3{
+    color: #727070;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    font-family: Gill Sans, sans-serif;
+}
+.link-suporte a{
+    color: #727070;
+    font-size: 12px;
+    padding: 10px;
+    margin-left: 41px;
+    text-transform: uppercase;
+    font-family: Gill Sans, sans-serif;
+}
+.link-suporte a:hover{
+    color: #e53977;
+}
+
+.box-footer-icons{
+    /*text-align: center;*/
+    text-align: right;
+    width: 100%;
+    float: left;
+    margin-top: 55px;
 }
 .box-footer-icons a{
     color: #777;
     margin-right: 15px;
 }
+.box-footer-icons span:hover{
+    color: #e53977;
+}
 
 .box-footer-icons span{
-    color: #777
+    color: #727070;
+    font-size: 30px;
+}
+.box-footer img{
+    width: 100%;
 }
 
 .info-dev{
@@ -503,11 +515,10 @@ form button:hover{
     text-align: center;
     padding: 10px 0;
     margin-top: 50px;
-    -webkit-box-shadow: 0px 6px 30px 0px rgba(0,0,0,0.55);
-    -moz-box-shadow: 0px 6px 30px 0px rgba(0,0,0,0.55);
-    box-shadow: 0px 6px 30px 0px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 0 6px 30px 0 rgba(0,0,0,0.55);
+    -moz-box-shadow: 0 6px 30px 0 rgba(0,0,0,0.55);
+    box-shadow: 0 6px 30px 0 rgba(0,0,0,0.55);
 }
-
 
 
 
