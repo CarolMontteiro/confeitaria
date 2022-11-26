@@ -795,7 +795,6 @@ li .dropdown {
     margin-left: 100px;
     height: 300px;
     display: flex;
-    /*background: #99C8EF;*/
 }
 .infor-contato{
     display: flex;
@@ -816,16 +815,13 @@ li .dropdown {
 .info-box-contato{
     display: flex;
     flex-direction: column;
-    /*background: silver;*/
     padding: 10px 10px 10px 40px;
 }
 .infor-contato h3{
     margin-bottom: 10px;
-    /*background: #FFC4D2;*/
     color: #642b18;
 }
 .infor-contato p{
-    /*background: rosybrown;*/
     color: #727070;
 }
 .infor-contato a{
@@ -839,19 +835,14 @@ li .dropdown {
     color: #e53977;
 }
 #form-contato .infor-contato{
-    /*background: blanchedalmond;*/
     display: flex;
 }
 #form-contato .form-contato{
-    /*background: #99C8EF;*/
     display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
     flex-direction: column;
     padding: 10px 40px;
 }
 #form-contato form{
-    /*background: darksalmon;*/
     display: flex;
     flex-direction: column;
 }
