@@ -781,8 +781,7 @@ li .dropdown {
     margin-top: 45px;
 }
 #form-contato img{
-    margin-top: 8px;
-    margin-left: 100px;
+    margin: 8px 25px 0 100px;
     height: 300px;
     display: flex;
 }
