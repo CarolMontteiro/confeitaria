@@ -97,8 +97,10 @@ body {
     background-image: linear-gradient(#f8f8f8, #FFC4D2);
 }
 
-#menu .container img { /*logo*/
+.menu-container img { /*logo*/
     float: left;
+    position: relative;
+    bottom: 25px;
     width: 128px;
     height: 125px;
 }
@@ -190,17 +192,8 @@ body {
     box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
 }
 
-.btn-1:hover {
+.btn-1:hover, .btn-2:hover {
     background-image: linear-gradient(#e53977, #99C8EF);
-}
-
-.btn-2:hover {
-    background-image: linear-gradient(#e53977, #99C8EF);
-}
-
-.contato-btn i {
-    color: #e53977;
-    font-weight: 600;
 }
 
 .contato-btn span {
@@ -215,6 +208,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #e53977;
+    font-weight: 600;
 }
 
 .login a { /*botão login*/
@@ -224,7 +219,7 @@ body {
     position: absolute;
     top: 5%;
     left: 92%;
-    padding: 15.1px;
+    padding: 15px;
     border-radius: 10px;
     -webkit-box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
     -moz-box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
@@ -384,7 +379,8 @@ li .dropdown {
     align-items: center;
     text-align: center;
     padding: 1rem 1.5rem;
-    max-width: 300px;
+    /*max-width: 300px;*/
+    width: 100%;
     background: white;
     margin: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -570,6 +566,7 @@ form button:hover {
     -moz-box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.55);
     box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.55);
 }
+
 
 /*###  Section Contato  ############################################################################################*/
 
@@ -870,6 +867,154 @@ li .dropdown {
     transition: 0.3s;
 }
 
+@media (max-width: 1253px){
+    .login a{
+        left: 90%;
+    }
+    .contato-btn{
+        left: 76%;
+    }
+}
+@media (max-width: 1175px) {
+    #slides{
+        width: 100%;
+        position: relative;
+        height: 500px;
+    }
+}
+@media (max-width: 1076px) {
+    .login a{
+        left: 87%;
+    }
+    .contato-btn{
+        left: 70%;
+    }
+}
+@media (max-width: 998px) {
+    #slides{
+        width: 100%;
+        position: relative;
+        height: 450px;
+    }
+}
+@media (max-width: 904px) {
+    #slides{
+        width: 100%;
+        position: relative;
+        height: 420px;
+    }
+    .search-box{
+        left: 38%;
+    }
+}
+@media (max-width: 850px) {
+    #slides{
+        width: 100%;
+        position: relative;
+        height: 400px;
+    }
+    .menu-container h1{
+        font-size: 45px;
+    }
+    .menu-container p{
+        font-size: 10px;
+    }
+    .menu-container img{
+        width: 120px;
+        height: 120px;
+        background: #99C8EF;
+    }
+}
+
+@media (max-width: 790px) {
+    #slides{
+        width: 100%;
+        position: relative;
+        height: 380px;
+    }
+}
+@media (max-width: 750px) {
+    #slides {
+        width: 100%;
+        position: relative;
+        height: 350px;
+    }
+}
+@media (max-width: 700px) {
+    #slides{
+        width: 100%;
+        position: relative;
+        height: 330px;
+    }
+}
+@media (max-width: 660px) {
+    #slides{
+        width: 100%;
+        position: relative;
+        height: 300px;
+    }
+}
+@media (max-width: 600px) {
+    #slides{
+        width: 100%;
+        position: relative;
+        height: 240px;
+    }
+}
+@media (max-width: 540px) {
+    #slides{
+        width: 100%;
+        position: relative;
+        height: 260px;
+    }
+}
+@media (max-width: 414px) {
+    #slides{
+        width: 100%;
+        position: relative;
+        height: 200px;
+    }
+}
+@media (max-width: 375px) {
+    #slides{
+        width: 100%;
+        position: relative;
+        height: 180px;
+    }
+}
+@media (max-width: 320px) {
+    #slides{
+       display: none;
+    }
+}
+@media (max-width: 280px) {
+    #slides {
+        display: none;
+    }
+}
+@media (max-width: 700px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+}
+@media (max-width: 500px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        align-items: center;
+    }
+}
+@media (max-width: 400px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        align-items: center;
+    }
+}
 
 
 
