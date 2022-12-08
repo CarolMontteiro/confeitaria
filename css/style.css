@@ -96,16 +96,13 @@ body {
 #menu {
     background-image: linear-gradient(#f8f8f8, #FFC4D2);
 }
-
-.menu-container img { /*logo*/
+#menu .container img{
     float: left;
-    position: relative;
-    bottom: 25px;
     width: 128px;
     height: 125px;
-}
 
-/*css da logo do menu*/
+}
+    /*css da logo do menu*/
 .padrao-h1-logo-menu {
     margin-top: 32px;
     font-size: 47px;
@@ -574,12 +571,6 @@ form button:hover {
     background-image: linear-gradient(#f8f8f8, #FFC4D2);
 }
 
-#menu .container img { /*logo*/
-    float: left;
-    width: 128px;
-    height: 125px;
-}
-
 /*css da logo do menu*/
 .padrao-h1-logo-menu {
     margin-top: 32px;
@@ -907,25 +898,36 @@ li .dropdown {
         left: 38%;
     }
 }
-@media (max-width: 850px) {
+@media (max-width: 820px) {
     #slides{
         width: 100%;
         position: relative;
         height: 400px;
     }
-    .menu-container h1{
+    .logo-container h1{
         font-size: 45px;
     }
-    .menu-container p{
+    .logo-container p{
         font-size: 10px;
     }
-    .menu-container img{
-        width: 120px;
-        height: 120px;
-        background: #99C8EF;
+    .search-box{
+        height: 47px;
+        left: 38%;
+        padding: 6px ;
+    }
+    .btn-1, .btn-2{
+        height: 45px;
+        width: 45px;
+    }
+    .login a{
+        padding: 13px;
+        top: 35px;
+    }
+    #menu .container img{
+        width: 126px;
+        height: 123px;
     }
 }
-
 @media (max-width: 790px) {
     #slides{
         width: 100%;
@@ -938,6 +940,16 @@ li .dropdown {
         width: 100%;
         position: relative;
         height: 350px;
+    }
+    .btn-1, .btn-2{
+        width: 25px;
+        height: 0;
+
+    }
+    .contato-btn{
+        left: 75%;
+        background: #f8f8f8;
+
     }
 }
 @media (max-width: 700px) {
@@ -1006,6 +1018,7 @@ li .dropdown {
         width: 75%;
         align-items: center;
     }
+
 }
 @media (max-width: 400px) {
     .box {
