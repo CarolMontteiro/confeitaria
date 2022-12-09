@@ -100,7 +100,6 @@ body {
     float: left;
     width: 128px;
     height: 125px;
-
 }
     /*css da logo do menu*/
 .padrao-h1-logo-menu {
@@ -162,7 +161,7 @@ body {
     padding: 0;
     color: #727070;
     font-size: 16px;
-    line-height: 40px;
+    line-height:30px;
 }
 
 .contato-btn { /*botões links*/
@@ -172,7 +171,7 @@ body {
     height: 45px;
     border-radius: 40px;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
 }
 
@@ -571,6 +570,7 @@ form button:hover {
     background-image: linear-gradient(#f8f8f8, #FFC4D2);
 }
 
+
 /*css da logo do menu*/
 .padrao-h1-logo-menu {
     margin-top: 32px;
@@ -934,6 +934,16 @@ li .dropdown {
         position: relative;
         height: 380px;
     }
+    .login a{
+        top: 33px;
+    }
+    .search-box{
+        padding: 3px;
+        height: 45px;
+    }
+    .search-text{
+        padding: 0 0 0 3px;
+    }
 }
 @media (max-width: 750px) {
     #slides {
@@ -944,12 +954,32 @@ li .dropdown {
     .btn-1, .btn-2{
         width: 25px;
         height: 0;
-
     }
     .contato-btn{
         left: 75%;
-        background: #f8f8f8;
-
+    }
+    .contato-btn i {
+        background: white;
+    }
+    .login a{
+        font-size: 15px;
+        padding: 10px;
+        left: 88%;
+    }
+    .search-box{
+        left: 40%;
+        padding: 2px;
+        height: 44px;
+    }
+    .search-text {
+        padding: 0 0 0 5px;
+    }
+    .logo-container h1{
+        font-size: 43px;
+    }
+    #menu .container img{
+        width: 120px;
+        height: 118px;
     }
 }
 @media (max-width: 700px) {
@@ -958,12 +988,88 @@ li .dropdown {
         position: relative;
         height: 330px;
     }
+    .btn-1, .btn-2{
+        width: 24px;
+        height: 0;
+    }
+    .contato-btn{
+        left: 77%;
+    }
+    .contato-btn i {
+        background: white;
+    }
+    .login a{
+        font-size: 15px;
+        padding: 10px;
+        left: 90%;
+    }
+    .search-box{
+        left: 40%;
+        padding: 2px;
+        height: 40px;
+        top: 6%;
+    }
+    .search-text {
+        padding: 0 0 0 5px;
+    }
+    .logo-container h1{
+        font-size: 40px;
+    }
+    #menu .container p{
+        font-size: 10px;
+    }
+    #menu .container img{
+        width: 118px;
+        height: 116px;
+    }
 }
 @media (max-width: 660px) {
     #slides{
         width: 100%;
         position: relative;
         height: 300px;
+    }
+    .btn-1{
+        position: fixed;
+        bottom: 20px;
+        right: 3px;
+        height: 50px;
+        width: 50px;
+    }
+    .btn-2{
+        display: none;
+    }
+    .contato-btn{
+        left: 77%;
+    }
+    .contato-btn i {
+        background: white;
+        font-size: 20px;
+    }
+    .login a{
+        font-size: 15px;
+        padding: 12px;
+        left: 88%;
+        top: 6%;
+    }
+    .search-box{
+        left: 45%;
+        padding: 3px;
+        height: 40px;
+        top: 6%;
+    }
+    .search-text {
+        padding: 0 0 0 5px;
+    }
+    .logo-container h1{
+        font-size: 40px;
+    }
+    #menu .container p{
+        font-size: 10px;
+    }
+    #menu .container img{
+        width: 118px;
+        height: 116px;
     }
 }
 @media (max-width: 600px) {
@@ -972,12 +1078,99 @@ li .dropdown {
         position: relative;
         height: 240px;
     }
+    .btn-1{
+        position: fixed;
+        bottom: 20px;
+        right: 3px;
+        height: 50px;
+        width: 50px;
+    }
+    .btn-2{
+        display: none;
+    }
+    .contato-btn{
+        left: 77%;
+    }
+    .contato-btn i {
+        background: white;
+        font-size: 20px;
+    }
+    .login a{
+        font-size: 15px;
+        padding: 12px;
+        left: 86%;
+        top: 5%;
+    }
+    .search-box{
+        left: 43%;
+        padding: 2px;
+        height: 40px;
+        top: 5%;
+    }
+    .search-box:hover > .search-text{
+        width: 200px;
+    }
+    .search-text {
+        padding: 0;
+        width: 0;
+        transition: 0.4s;
+    }
+    .search-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-container h1{
+        font-size: 35px;
+    }
+    #menu .container p{
+        font-size: 9px;
+    }
+    #menu .container img{
+        width: 114px;
+        height: 112px;
+    }
 }
 @media (max-width: 540px) {
     #slides{
         width: 100%;
         position: relative;
         height: 260px;
+    }
+    .login a{
+        font-size: 14px;
+        padding: 10px;
+        left: 86%;
+        top: 5%;
+    }
+    .search-box{
+        left: 43%;
+        padding: 2px;
+        height: 40px;
+        top: 5%;
+    }
+    .search-box:hover > .search-text{
+        width: 200px;
+    }
+    .search-text {
+        padding: 0;
+        width: 0;
+        transition: 0.4s;
+    }
+    .search-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-container h1{
+        font-size: 35px;
+    }
+    #menu .container p{
+        font-size: 9px;
+    }
+    #menu .container img{
+        width: 114px;
+        height: 112px;
     }
 }
 @media (max-width: 414px) {
