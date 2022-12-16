@@ -910,7 +910,7 @@ li .dropdown {
         left: 40%;
     }
 }
-@media (max-width: 820px) {
+@media (max-width: 800px) {
     #slides{
         width: 100%;
         position: relative;
@@ -941,13 +941,13 @@ li .dropdown {
         left: 72%;
     }
     .login a{
-        padding: 15px;
-        top: 35px;
+        padding: 13px;
+        top: 30px;
         left: 89%;
     }
     #menu .container img{
-        width: 126px;
-        height: 123px;
+        width: 112px;
+        height: 112px;
     }
 }
 @media (max-width: 768px) {
@@ -987,18 +987,18 @@ li .dropdown {
         height: 0;
     }
     .contato-btn{
-        left: 76%;
+        left: 75%;
     }
     .contato-btn i {
         background: white;
     }
     .login a{
         font-size: 15px;
-        padding: 13px;
+        padding: 12px;
         left: 89%;
     }
     .search-box{
-        left: 40%;
+        left: 39%;
         padding: 2px;
         height: 44px;
     }
@@ -1009,8 +1009,8 @@ li .dropdown {
         font-size: 43px;
     }
     #menu .container img{
-        width: 120px;
-        height: 118px;
+        width: 112px;
+        height: 112px;
     }
 }
 @media (max-width: 700px) {
@@ -1055,7 +1055,7 @@ li .dropdown {
         height: 116px;
     }
 }
-@media (max-width: 660px) {
+@media (max-width: 640px) {
     #slides{
         width: 100%;
         position: relative;
@@ -1075,13 +1075,13 @@ li .dropdown {
         font-size: 15px;
         padding: 12px;
         left: 88%;
-        top: 6%;
+        top: 9%;
     }
     .search-box{
         left: 45%;
         padding: 3px;
         height: 40px;
-        top: 6%;
+        top: 9%;
     }
     .search-text {
         padding: 0 0 0 5px;
@@ -1093,8 +1093,8 @@ li .dropdown {
         font-size: 10px;
     }
     #menu .container img{
-        width: 118px;
-        height: 116px;
+        width: 112px;
+        height: 112px;
     }
 }
 @media (max-width: 600px) {
@@ -1123,22 +1123,14 @@ li .dropdown {
     .login a{
         font-size: 15px;
         padding: 12px;
-        left: 86%;
-        top: 5%;
+        left: 87%;
+        top: 4%;
     }
     .search-box{
-        left: 43%;
+        left: 44%;
         padding: 2px;
         height: 40px;
-        top: 5%;
-    }
-    .search-box:hover > .search-text{
-        width: 200px;
-    }
-    .search-text {
-        padding: 0;
-        width: 0;
-        transition: 0.4s;
+        top: 4%;
     }
     .search-btn{
         display: flex;
@@ -1146,14 +1138,14 @@ li .dropdown {
         align-items: center;
     }
     .logo-container h1{
-        font-size: 35px;
+        font-size: 40px;
     }
     #menu .container p{
         font-size: 9px;
     }
     #menu .container img{
-        width: 114px;
-        height: 112px;
+        width: 108px;
+        height: 108px;
     }
     .box {
         display: flex;
@@ -1174,9 +1166,9 @@ li .dropdown {
         height: 260px;
     }
     .login a{
-        font-size: 14px;
-        padding: 10px;
-        left: 86%;
+        font-size: 16px;
+        padding: 13px;
+        left: 84%;
         top: 5%;
     }
     .media{
@@ -1210,16 +1202,15 @@ li .dropdown {
         align-items: center;
     }
     .logo-container h1{
-        font-size: 38px;
+        font-size: 45px;
     }
     #menu .container p{
-        font-size: 9px;
+        font-size: 10px;
     }
     #menu .container img{
         width: 112px;
         height: 110px;
     }
-
 }
 @media (max-width: 500px) {
     .box {
@@ -1227,6 +1218,36 @@ li .dropdown {
         flex-direction: column;
         width: 75%;
         align-items: center;
+    }
+}
+@media (max-width: 480px) {
+    #slides{
+        width: 100%;
+        position: relative;
+        height: 233px;
+    }
+    .login a{
+        font-size: 16px;
+        padding: 13px;
+        left: 80%;
+        top: 4%;
+    }
+    .search-media:hover > .search-text{
+        width: 210px;
+        background: white;
+        border-radius: 15px;
+        padding: 0 0 0 5px;
+        transition: 0.4s;
+    }
+    .logo-container h1{
+        font-size: 45px;
+    }
+    #menu .container p{
+        font-size: 10px;
+    }
+    #menu .container img{
+        width: 110px;
+        height: 110px;
     }
 }
 @media (max-width: 414px) {
@@ -1258,14 +1279,7 @@ li .dropdown {
         width: 114px;
         height: 112px;
     }
-    /*.btn-1{*/
-    /*    position: fixed;*/
-    /*    bottom: 20px;*/
-    /*    left: 550%;*/
-    /*    right: 3px;*/
-    /*    height: 50px;*/
-    /*    width: 50px;*/
-    /*}*/
+
 }@media (max-width: 400px) {
     .box {
         display: flex;
@@ -1274,17 +1288,48 @@ li .dropdown {
         align-items: center;
     }
 }
-/*@media (max-width: 412px) {*/
-/*    .btn-1{*/
-/*        position: fixed;*/
-/*        bottom: 20px;*/
-/*        left: 75%;*/
-/*        right: 3px;*/
-/*        height: 50px;*/
-/*        width: 50px;*/
-/*    }*/
-/*}*/
-
+@media (max-width: 393px) {
+    .login a{
+        font-size: 15px;
+        padding: 13px;
+        left: 79%;
+        top: 3.5%;
+    }
+    #menu .container img{
+        width: 106px;
+        height: 106px;
+    }
+}
+@media (max-width: 384px) {
+    #slides{
+        width: 100%;
+        position: relative;
+        height: 187px;
+    }
+    .login a{
+        font-size: 14px;
+        padding: 13px;
+        left: 80%;
+        top: 4.5%;
+    }
+    .search-media:hover > .search-text{
+        width: 210px;
+        background: white;
+        border-radius: 15px;
+        padding: 0 0 0 5px;
+        transition: 0.4s;
+    }
+    .logo-container h1{
+        font-size: 40px;
+    }
+    #menu .container p{
+        font-size: 10px;
+    }
+    #menu .container img{
+        width: 108px;
+        height: 108px;
+    }
+}
 @media (max-width: 375px) {
     #slides{
         width: 100%;
@@ -1354,8 +1399,8 @@ li .dropdown {
         font-size: 10px;
     }
     #menu .container img{
-        width: 110px;
-        height: 110px;
+        width: 100px;
+        height: 100px;
     }
     .btn-1{
         position: fixed;
