@@ -134,6 +134,7 @@ body {
 /*###################  FINAL DO CSS LOGO MENU   ###########################*/
 
 
+
 /*##################      CSS LOGO FOOTER        #########################*/
 .padrao-h1-logo-footer {
     font-size: 35px;
@@ -151,24 +152,34 @@ body {
 
 #search-box { /*caixa de pesquisa*/
     width: 33.3%;
+    position: relative;
+    /*background: chartreuse;*/
     float: left;
-    margin-top: 38px;
+    margin-top: 41px;
+}
+
+#search-box #search-text {
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
     background: white;
-    height: 50px;
-    padding: 10px;
     border-radius: 30px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     -webkit-box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
     -moz-box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
     box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
 }
 
+#search-box a {
+    position: absolute;
+    right: 5px;
+    top: 4px;
+}
+
 #search-btn i { /*icone lupa*/
     color: #e53977;
     background-color: #FFC4D2;
-    padding: 10px;
+    padding: 8px;
     border-radius: 100%;
 }
 
@@ -343,7 +354,13 @@ body {
     }
 
     #search-btn i { /*icone lupa*/
-        padding: 9px;
+        padding: 8px;
+    }
+
+    #search-box a {
+        position: absolute;
+        right: 10px;
+        top: 10px;
     }
 
     #contato-btn { /*botões links*/
@@ -351,7 +368,7 @@ body {
         float: inherit;
         /*background: #99C8EF;*/
         justify-content: center;
-        height: 55px;
+        height: 80px;
     }
 
     #contato-btn i {
@@ -378,6 +395,12 @@ body {
         font-size: 38px;
     }
 
+    #login {
+        position: absolute;
+        right: 3% ;
+        top: 23%;
+    }
+
     #login a{
         font-weight: 200;
         padding: 8px;
@@ -400,6 +423,28 @@ body {
         padding: 8px;
     }
 
+    #search-box a {
+        position: absolute;
+        right: 10px;
+        top: 9px;
+    }
+}
+
+@media (max-width: 414px) {
+
+    #logo-img img{
+        width: 72px;
+    }
+
+    .padrao-h1-logo-menu {
+        font-size: 33px;
+    }
+
+    #login {
+        position: absolute;
+        right: 3% ;
+        top: 23%;
+    }
 }
 
 /*############################    FINAL DO TOP      ##################################################################*/
