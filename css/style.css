@@ -99,26 +99,19 @@ body {
     background-image: linear-gradient(#f8f8f8, #FFC4D2);
 }
 
-#top .container {
-    /*background-color: aliceblue;*/
-}
-
 #logo-container {
-    /*background-color: darkorange;*/
     width: 33.3%;
     float: left;
 }
 
 #logo-description {
     margin: 10% 0;
-    /*background: aquamarine;*/
     float: left;
     width: 65%;
 }
 
 #logo-img {
     width: 35%;
-    /*background: #99C8EF;*/
     float: left;
 }
 
@@ -126,9 +119,8 @@ body {
     width: 100%;
 }
 
-/*css da logo do menu*/
+/*###################   CSS LOGO MENU   ###########################*/
 .padrao-h1-logo-menu {
-    /*margin-top: 32px;*/
     font-size: 47px;
     font-family: 'Dancing Script', cursive;
     color: #e53977;
@@ -139,8 +131,10 @@ body {
     font-size: 12px;
     color: rgb(72, 70, 70)
 }
+/*###################  FINAL DO CSS LOGO MENU   ###########################*/
 
-/*css da logo do footer*/
+
+/*##################      CSS LOGO FOOTER        #########################*/
 .padrao-h1-logo-footer {
     font-size: 35px;
     font-family: 'Dancing Script', cursive;
@@ -152,6 +146,8 @@ body {
     font-size: 8px;
     color: rgb(72, 70, 70);
 }
+/*###########      FINAL DO CSS LOGO FOOTER        ######################*/
+
 
 #search-box { /*caixa de pesquisa*/
     width: 33.3%;
@@ -191,11 +187,9 @@ body {
     margin-top: 38px;
     float: left;
     justify-content: flex-end;
-    /*background-color: aquamarine;*/
     height: 45px;
     border-radius: 40px;
     display: flex;
-    /*justify-content: space-between;*/
     align-items: center;
 }
 
@@ -250,6 +244,10 @@ body {
 }
 
 @media (max-width: 1200px) {
+    #top .container{
+        position: relative;
+    }
+
     #logo-container {
         width: 100%;
         padding-top: 20px;
@@ -271,36 +269,138 @@ body {
         width: 55%;
     }
 
-    #search-box { /*caixa de pesquisa*/
-        width: 50%;
-        margin: 38px 25% 0 25%;
-        background: white;
-        height: 50px;
-        padding: 10px;
-        border-radius: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        -webkit-box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
-        -moz-box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
-        box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
+    #login {
+        position: absolute;
+        right: 5% ;
+        top: 23%;
     }
 
     #contato-btn { /*botões links*/
         width: 100%;
-        margin-top: 38px;
-        float: left;
-        justify-content: flex-end;
-        /*background-color: aquamarine;*/
-        height: 45px;
-        border-radius: 40px;
-        display: flex;
-        /*justify-content: space-between;*/
-        align-items: center;
+        float: inherit;
+        /*background: #99C8EF;*/
+        justify-content: center;
+        height: 60px;
+    }
+
+    #search-box { /*caixa de pesquisa*/
+        width: 50%;
+        margin: 30px 25% 0 25%;
+    }
+
+    #search-text{
+        font-size: 15px;
+        line-height: 25px;
     }
 
 }
 
+@media (max-width: 600px) {
+    #top .container{
+        position: relative;
+    }
+
+    #logo-img img{
+        width: 90px;
+    }
+
+    #logo-description {
+        margin: 24px 0 0 0;
+        float: left;
+        width: 55%;
+    }
+
+    .padrao-h1-logo-menu {
+        font-size: 40px;
+    }
+
+    .padrao-p-logo-menu {
+        font-size: 10px;
+    }
+
+    #login {
+        /*background: #642b18;*/
+        position: absolute;
+        right: 5% ;
+        top: 23%;
+    }
+
+    #login a{
+        padding: 10px;
+        border-radius: 9px;
+    }
+
+    #search-box { /*caixa de pesquisa*/
+        width: 50%;
+        margin: 30px 25% 0 25%;
+        height: 46px;
+        padding: 6px;
+    }
+
+    #search-text{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    #search-btn i { /*icone lupa*/
+        padding: 9px;
+    }
+
+    #contato-btn { /*botões links*/
+        width: 100%;
+        float: inherit;
+        /*background: #99C8EF;*/
+        justify-content: center;
+        height: 55px;
+    }
+
+    #contato-btn i {
+        width: 32px;
+        height: 32px;
+    }
+
+    #contato-btn span {
+        margin: 5px;
+    }
+
+    .btn-1, .btn-2 {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 486px) {
+    #logo-img img{
+        width: 80px;
+    }
+
+    .padrao-h1-logo-menu {
+        font-size: 38px;
+    }
+
+    #login a{
+        font-weight: 200;
+        padding: 8px;
+        border-radius: 7px;
+    }
+
+    #search-box { /*caixa de pesquisa*/
+        width: 50%;
+        margin: 30px 25% 0 25%;
+        height: 43px;
+        padding: 5px;
+    }
+
+    #search-text{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    #search-btn i { /*icone lupa*/
+        padding: 8px;
+    }
+
+}
 
 /*############################    FINAL DO TOP      ##################################################################*/
 
