@@ -451,8 +451,22 @@ body {
 
 /*##############        MENU LISTA       #################################################################3###########*/
 
+#menu-item { /*borda em traços*/
+    border-top: 2px dashed #ce698f;
+    border-bottom: 2px dashed #ce698f;
+    background: white;
+    display: flex;
+}
+
+#menu-item li a:hover, .dropdown:hover .dropbtn {
+    background: #E53977;
+    color: white;
+    transition: 0.4s;
+}
+
 .fixed, li { /*menu listas*/
     float: left;
+    text-align: center;
 }
 
 .fixed li a:hover {
@@ -461,28 +475,11 @@ body {
     transition: 0.4s;
 }
 
-#menu-item { /*borda em traços*/
-    border-top: 2px dashed #ce698f;
-    border-bottom: 2px dashed #ce698f;
-    background: white;
-    display: flex;
-}
-
 li a, .dropbtn {
     display: inline-block;
     color: #642b18;
     padding: 17px 42.2px;
     font-weight: bold;
-}
-
-.fixed, li {
-    text-align: center;
-}
-
-#menu-item li a:hover, .dropdown:hover .dropbtn {
-    background: #E53977;
-    color: white;
-    transition: 0.4s;
 }
 
 li .dropdown {
@@ -508,6 +505,31 @@ li .dropdown {
     display: block;
     z-index: 999;
 }
+
+@media (max-width: 1195px) {
+
+    .dropdown:hover .drop-content {
+        display: block;
+        z-index: 1000;
+        width: 35%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .fixed, li{
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .dropdown:hover .drop-content {
+        display: block;
+        z-index: 1000;
+        width: 35%;
+    }
+}
+
 /*#################      FINAL MENU LISTA          ###################################################################*/
 
 
@@ -516,6 +538,7 @@ li .dropdown {
 #slides img {
     width: 100%;
 }
+
 
 /*###############       FINAL BANNER          ########################################################################*/
 
@@ -586,13 +609,13 @@ li .dropdown {
     font-size: 16px;
 }
 
+
+/*############    CARDS    ####################################################################################3*/
 .box {
     display: flex;
     justify-content: center;
 }
 
-
-/*############    CARDS    ####################################################################################3*/
 .card {
 
     display: flex;
@@ -645,9 +668,24 @@ li .dropdown {
         width: 50%;
     }
 }
+
 @media (max-width: 600px){
     .box{
         width: 60%;
+    }
+}
+
+@media (max-width: 445px) {
+
+    .box{
+        width: 60%;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .box{
+        width: 75%;
     }
 }
 /*###############    FINAL DOS CARDS    ##################################################################*/
