@@ -529,17 +529,16 @@ li .dropdown {
         width: 35%;
     }
 }
-
 /*#################      FINAL MENU LISTA          ###################################################################*/
 
 
-/*###############        BANNER          ############################################################################*/
 
+
+
+/*###############        BANNER          ############################################################################*/
 #slides img {
     width: 100%;
 }
-
-
 /*###############       FINAL BANNER          ########################################################################*/
 
 
@@ -750,102 +749,104 @@ form button:hover {
 /*##############    INÍCIO DO FOOTER      #######################################################################*/
 #footer {
     margin-top: -4px;
+    /*background: #727070;*/
 }
 
-.box-footer-content {
-    width: 22%;
+#footer .container{
+    /*background: #f8f8f8;*/
+}
+
+#box-footer-logo{
+    width: 25%;
     float: left;
-    margin-top: 10px;
-    margin-right: 10px;
+    /*background: #99C8EF;*/
 }
 
-.box-footer-img, .box-footer-logo-title {
+.box-footer-img{
+    /*background: blueviolet;*/
+    width: 35%;
     float: left;
 }
 
-.box-footer-logo-title {
-    margin-top: 10px;
-}
-
-.box-footer-img {
-    margin: 2px;
-}
-
-.box-footer-img img {
-    width: 90px;
-    height: 90px;
-}
-
-.box-footer-logo-title h2 {
-    font-size: 30px;
-}
-
-.box-suporte {
-    margin-top: 30px;
-    margin-right: 2%;
-    float: left;
-    width: 14%;
-}
-
-.box-suporte a {
-    height: 7px;
-}
-
-.link-suporte {
-    float: left;
-    flex-direction: column;
-}
-
-.link-suporte a {
-    color: #727070;
-    font-size: 13px;
-    float: left;
-    font-family: Gill Sans, sans-serif;
-}
-
-.link-suporte a:hover {
-    color: #e53977;
-}
-
-.box-card {
-    margin-top: 30px;
-    float: left;
-    width: 28%;
-    margin-right: 2%;
-}
-
-.box-card h3, .box-suporte h3 {
-    color: #727070;
-    font-size: 15px;
-    text-transform: uppercase;
-    padding: 10px;
-    text-align: center;
-    font-family: Gill Sans, sans-serif;
-}
-
-.box-card img {
+.box-footer-img img{
     width: 100%;
-    margin-top: 15px;
+    margin-top: 7px;
 }
 
-.box-footer-icons {
-
+.box-footer-logo-title{
+    /*background: darksalmon;*/
+    width: 65%;
     float: left;
-    margin-top: 50px;
 }
 
-.box-footer-icons a {
-    color: #777;
-    margin-left: 30px;
+.box-footer-logo-title h1{
+    margin: 31px 0 1px 0;
+    font-size: 45px;
 }
 
-.box-footer-icons span:hover {
-    color: #e53977;
+.box-footer-logo-title p{
+    font-size: 11px;
 }
 
-.box-footer-icons span {
+#box-suporte h3, #box-card h3, #box-icons h3{
+    margin-top: 40px;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #642b18;
+    font-family: Gill Sans, sans-serif;
+
+    /*background: deeppink;*/
+}
+
+#box-suporte{
+    width: 20%;
+    float: left;
+    /*background: darkorange;*/
+}
+
+.link-suporte a{
+    /*background: #99C8EF;*/
     color: #727070;
-    font-size: 30px;
+    padding: 11px 50px;
+    font-size: 15px;
+    font-family: Gill Sans, sans-serif;
+}
+
+.link-suporte a:hover, .box-footer-icons span:hover{
+    color: #e53977;
+    cursor: pointer;
+}
+
+#box-card{
+    width: 30%;
+    float: left;
+    /*background: chartreuse;*/
+}
+
+#box-card img{
+    margin-top: 15px;
+    width: 100%;
+}
+
+#box-icons{
+    width: 25%;
+    float: left;
+    /*background: darkkhaki;*/
+}
+
+.box-footer-icons{
+    font-size: 25px;
+    margin: 25px 0 0 65px ;
+}
+
+.box-footer-icons a{
+    margin-left: 12px;
+}
+
+.box-footer-icons span{
+    color: #727070;
 }
 
 /*###########      FINAL DO FOOTER      ############################################################################*/
@@ -980,556 +981,6 @@ form button:hover {
     transition: 0.3s;
 }
 
-/*@media (max-width: 1175px) {*/
-/*    #slides{*/
-/*        width: 100%;*/
-/*        position: relative;*/
-/*        height: 500px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 1076px) {*/
-/*    .login a {*/
-/*        left: 89%;*/
-/*    }*/
-/*    .contato-btn {*/
-/*        left: 75%;*/
-/*    }*/
-/*    .search-box{*/
-/*        left: 38%;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 1024px){*/
-/*    .login a{*/
-/*        left: 90%;*/
-/*        top: 30px;*/
-/*    }*/
-/*    .contato-btn{*/
-/*        left: 76%;*/
-/*        top: 30px;*/
-/*    }*/
-/*    .search-box{*/
-/*        left: 38%;*/
-/*        top: 30px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 912px) {*/
-/*    #slides{*/
-/*        width: 100%;*/
-/*        position: relative;*/
-/*        height: 450px;*/
-/*    }*/
-/*    .contato-btn{*/
-/*        left: 74%;*/
-/*    }*/
-/*    .search-box{*/
-/*        left: 40%;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 800px) {*/
-/*    #slides{*/
-/*        width: 100%;*/
-/*        position: relative;*/
-/*        height: 400px;*/
-/*    }*/
-/*    .logo-container h1{*/
-/*        font-size: 45px;*/
-/*    }*/
-/*    .logo-container p{*/
-/*        font-size: 10px;*/
-/*    }*/
-/*    .search-box{*/
-/*        height: 47px;*/
-/*        left: 39%;*/
-/*        padding: 3px ;*/
-/*    }*/
-/*    .search-text{*/
-/*        padding: 0 0 0 4px;*/
-/*    }*/
-/*    .btn-1, .btn-2{*/
-/*        height: 45px;*/
-/*        width: 45px;*/
-/*    }*/
-/*    .contato-btn i {*/
-/*        background: white;*/
-/*    }*/
-/*    .contato-btn{*/
-/*        left: 72%;*/
-/*    }*/
-/*    .login a{*/
-/*        padding: 13px;*/
-/*        top: 30px;*/
-/*        left: 89%;*/
-/*    }*/
-/*    #menu .container img{*/
-/*        width: 112px;*/
-/*        height: 112px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 768px) {*/
-/*    #slides{*/
-/*        width: 100%;*/
-/*        position: relative;*/
-/*        height: 380px;*/
-/*    }*/
-/*    .login a{*/
-/*        top: 33px;*/
-/*        padding: 12px;*/
-/*    }*/
-/*    .btn-1, .btn-2{*/
-/*        width: 24px;*/
-/*        height: 0;*/
-/*    }*/
-/*    .contato-btn{*/
-/*        left: 76%;*/
-/*    }*/
-/*    .search-box{*/
-/*        padding: 3px;*/
-/*        height: 43px;*/
-/*        left: 41%;*/
-/*    }*/
-/*    .search-text{*/
-/*        padding: 0 0 0 3px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 750px) {*/
-/*    #slides {*/
-/*        width: 100%;*/
-/*        position: relative;*/
-/*        height: 350px;*/
-/*    }*/
-/*    .btn-1, .btn-2{*/
-/*        width: 25px;*/
-/*        height: 0;*/
-/*    }*/
-/*    .contato-btn{*/
-/*        left: 75%;*/
-/*    }*/
-/*    .contato-btn i {*/
-/*        background: white;*/
-/*    }*/
-/*    .login a{*/
-/*        font-size: 15px;*/
-/*        padding: 12px;*/
-/*        left: 89%;*/
-/*    }*/
-/*    .search-box{*/
-/*        left: 39%;*/
-/*        padding: 2px;*/
-/*        height: 44px;*/
-/*    }*/
-/*    .search-text {*/
-/*        padding: 0 0 0 5px;*/
-/*    }*/
-/*    .logo-container h1{*/
-/*        font-size: 43px;*/
-/*    }*/
-/*    #menu .container img{*/
-/*        width: 112px;*/
-/*        height: 112px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 700px) {*/
-/*    #slides{*/
-/*        width: 100%;*/
-/*        position: relative;*/
-/*        height: 330px;*/
-/*    }*/
-/*    .btn-1{*/
-/*        position: fixed;*/
-/*        bottom: 20px;*/
-/*        right: 3px;*/
-/*        height: 50px;*/
-/*        width: 50px;*/
-/*    }*/
-/*    .btn-2{*/
-/*        display: none;*/
-/*    }*/
-/*    .login a{*/
-/*        font-size: 15px;*/
-/*        padding: 12px;*/
-/*        left: 88%;*/
-/*        top: 37px;*/
-/*    }*/
-/*    .search-box{*/
-/*        left: 45%;*/
-/*        padding: 3px;*/
-/*        height: 40px;*/
-/*        top: 6%;*/
-/*    }*/
-/*    .search-text {*/
-/*        padding: 0 0 0 5px;*/
-/*    }*/
-/*    .logo-container h1{*/
-/*        font-size: 40px;*/
-/*    }*/
-/*    #menu .container p{*/
-/*        font-size: 10px;*/
-/*    }*/
-/*    #menu .container img{*/
-/*        width: 118px;*/
-/*        height: 116px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 640px) {*/
-/*    #slides{*/
-/*        width: 100%;*/
-/*        position: relative;*/
-/*        height: 300px;*/
-/*    }*/
-/*    .btn-1{*/
-/*        position: fixed;*/
-/*        bottom: 20px;*/
-/*        right: 3px;*/
-/*        height: 50px;*/
-/*        width: 50px;*/
-/*    }*/
-/*    .btn-2{*/
-/*        display: none;*/
-/*    }*/
-/*    .login a{*/
-/*        font-size: 15px;*/
-/*        padding: 12px;*/
-/*        left: 88%;*/
-/*        top: 9%;*/
-/*    }*/
-/*    .search-box{*/
-/*        left: 45%;*/
-/*        padding: 3px;*/
-/*        height: 40px;*/
-/*        top: 9%;*/
-/*    }*/
-/*    .search-text {*/
-/*        padding: 0 0 0 5px;*/
-/*    }*/
-/*    .logo-container h1{*/
-/*        font-size: 40px;*/
-/*    }*/
-/*    #menu .container p{*/
-/*        font-size: 10px;*/
-/*    }*/
-/*    #menu .container img{*/
-/*        width: 112px;*/
-/*        height: 112px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 600px) {*/
-/*    #slides{*/
-/*        width: 100%;*/
-/*        position: relative;*/
-/*        height: 280px;*/
-/*    }*/
-/*    .btn-1{*/
-/*        position: fixed;*/
-/*        bottom: 20px;*/
-/*        right: 3px;*/
-/*        height: 50px;*/
-/*        width: 50px;*/
-/*    }*/
-/*    .btn-2{*/
-/*        display: none;*/
-/*    }*/
-/*    .contato-btn{*/
-/*        left: 77%;*/
-/*    }*/
-/*    .contato-btn i {*/
-/*        background: white;*/
-/*        font-size: 20px;*/
-/*    }*/
-/*    .login a{*/
-/*        font-size: 15px;*/
-/*        padding: 12px;*/
-/*        left: 87%;*/
-/*        top: 4%;*/
-/*    }*/
-/*    .search-box{*/
-/*        left: 44%;*/
-/*        padding: 2px;*/
-/*        height: 40px;*/
-/*        top: 4%;*/
-/*    }*/
-/*    .search-btn{*/
-/*        display: flex;*/
-/*        justify-content: center;*/
-/*        align-items: center;*/
-/*    }*/
-/*    .logo-container h1{*/
-/*        font-size: 40px;*/
-/*    }*/
-/*    #menu .container p{*/
-/*        font-size: 9px;*/
-/*    }*/
-/*    #menu .container img{*/
-/*        width: 108px;*/
-/*        height: 108px;*/
-/*    }*/
-/*    .box {*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        width: 75%;*/
-/*        align-items: center;*/
-/*    }*/
-/*}*/
-/*@media screen and (min-width: 541px) and (max-width: 1360px){*/
-/*    .media{*/
-/*        display: none;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 540px) {*/
-/*    #slides{*/
-/*        width: 100%;*/
-/*        position: relative;*/
-/*        height: 260px;*/
-/*    }*/
-/*    .login a{*/
-/*        font-size: 16px;*/
-/*        padding: 13px;*/
-/*        left: 84%;*/
-/*        top: 5%;*/
-/*    }*/
-/*    .media{*/
-/*        margin-bottom: 8px;*/
-/*    }*/
-/*    .media .search-media{*/
-/*        display: flex;*/
-/*        margin-top: 10px;*/
-/*    }*/
-/*    .media .search-media i{*/
-/*        background: #f8f8f8;*/
-/*    }*/
-/*    .search-box{*/
-/*       display: none;*/
-/*    }*/
-/*    .search-media:hover > .search-text{*/
-/*        width: 200px;*/
-/*        background: white;*/
-/*        border-radius: 15px;*/
-/*        padding: 0 0 0 5px;*/
-/*        transition: 0.4s;*/
-/*    }*/
-/*    .search-text {*/
-/*        padding: 0;*/
-/*        width: 0;*/
-/*        transition: 0.4s;*/
-/*    }*/
-/*    .search-btn{*/
-/*        display: flex;*/
-/*        justify-content: center;*/
-/*        align-items: center;*/
-/*    }*/
-/*    .logo-container h1{*/
-/*        font-size: 45px;*/
-/*    }*/
-/*    #menu .container p{*/
-/*        font-size: 10px;*/
-/*    }*/
-/*    #menu .container img{*/
-/*        width: 112px;*/
-/*        height: 110px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 500px) {*/
-/*    .box {*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        width: 75%;*/
-/*        align-items: center;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 480px) {*/
-/*    #slides{*/
-/*        width: 100%;*/
-/*        position: relative;*/
-/*        height: 233px;*/
-/*    }*/
-/*    .login a{*/
-/*        font-size: 16px;*/
-/*        padding: 13px;*/
-/*        left: 80%;*/
-/*        top: 4%;*/
-/*    }*/
-/*    .search-media:hover > .search-text{*/
-/*        width: 210px;*/
-/*        background: white;*/
-/*        border-radius: 15px;*/
-/*        padding: 0 0 0 5px;*/
-/*        transition: 0.4s;*/
-/*    }*/
-/*    .logo-container h1{*/
-/*        font-size: 45px;*/
-/*    }*/
-/*    #menu .container p{*/
-/*        font-size: 10px;*/
-/*    }*/
-/*    #menu .container img{*/
-/*        width: 110px;*/
-/*        height: 110px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 414px) {*/
-/*    #slides{*/
-/*        width: 100%;*/
-/*        position: relative;*/
-/*        height: 200px;*/
-/*    }*/
-/*    .login a{*/
-/*        font-size: 16px;*/
-/*        padding: 13px;*/
-/*        left: 80%;*/
-/*        top: 4%;*/
-/*    }*/
-/*    .search-media:hover > .search-text{*/
-/*        width: 210px;*/
-/*        background: white;*/
-/*        border-radius: 15px;*/
-/*        padding: 0 0 0 5px;*/
-/*        transition: 0.4s;*/
-/*    }*/
-/*    .logo-container h1{*/
-/*        font-size: 42px;*/
-/*    }*/
-/*    #menu .container p{*/
-/*        font-size: 10px;*/
-/*    }*/
-/*    #menu .container img{*/
-/*        width: 114px;*/
-/*        height: 112px;*/
-/*    }*/
-
-/*}@media (max-width: 400px) {*/
-/*    .box {*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        width: 85%;*/
-/*        align-items: center;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 393px) {*/
-/*    .login a{*/
-/*        font-size: 15px;*/
-/*        padding: 13px;*/
-/*        left: 79%;*/
-/*        top: 3.5%;*/
-/*    }*/
-/*    #menu .container img{*/
-/*        width: 106px;*/
-/*        height: 106px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 384px) {*/
-/*    #slides{*/
-/*        width: 100%;*/
-/*        position: relative;*/
-/*        height: 187px;*/
-/*    }*/
-/*    .login a{*/
-/*        font-size: 14px;*/
-/*        padding: 13px;*/
-/*        left: 80%;*/
-/*        top: 4.5%;*/
-/*    }*/
-/*    .search-media:hover > .search-text{*/
-/*        width: 210px;*/
-/*        background: white;*/
-/*        border-radius: 15px;*/
-/*        padding: 0 0 0 5px;*/
-/*        transition: 0.4s;*/
-/*    }*/
-/*    .logo-container h1{*/
-/*        font-size: 40px;*/
-/*    }*/
-/*    #menu .container p{*/
-/*        font-size: 10px;*/
-/*    }*/
-/*    #menu .container img{*/
-/*        width: 108px;*/
-/*        height: 108px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 375px) {*/
-/*    #slides{*/
-/*        width: 100%;*/
-/*        position: relative;*/
-/*        height: 180px;*/
-/*    }*/
-/*    .login a{*/
-/*        font-size: 14px;*/
-/*        padding: 10px;*/
-/*        left: 80%;*/
-/*        top: 4.5%;*/
-/*    }*/
-/*    .search-media:hover > .search-text{*/
-/*        width: 210px;*/
-/*        background: white;*/
-/*        border-radius: 15px;*/
-/*        padding: 0 0 0 5px;*/
-/*        transition: 0.4s;*/
-/*    }*/
-/*    .logo-container h1{*/
-/*        font-size: 40px;*/
-/*    }*/
-/*    #menu .container p{*/
-/*        font-size: 10px;*/
-/*    }*/
-/*    #menu .container img{*/
-/*        width: 114px;*/
-/*        height: 112px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 360px) {*/
-/*    .search-media:hover > .search-text{*/
-/*        width: 170px;*/
-/*        background: white;*/
-/*        border-radius: 15px;*/
-/*        padding: 0 0 0 5px;*/
-/*        transition: 0.4s;*/
-/*    }*/
-/*    .btn-1{*/
-/*        position: fixed;*/
-/*        bottom: 20px;*/
-/*        left: 75%;*/
-/*        right: 3px;*/
-/*        height: 50px;*/
-/*        width: 50px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 320px) {*/
-/*    #slides{*/
-/*       display: none;*/
-/*    }*/
-/*    .login a{*/
-/*       display: none;*/
-/*    }*/
-/*    .search-media:hover > .search-text{*/
-/*        width: 160px;*/
-/*        background: white;*/
-/*        border-radius: 15px;*/
-/*        padding: 0 0 0 5px;*/
-/*        transition: 0.4s;*/
-/*    }*/
-/*    .logo-container h1{*/
-/*        font-size: 42px;*/
-/*    }*/
-/*    #menu .container p{*/
-/*        font-size: 10px;*/
-/*    }*/
-/*    #menu .container img{*/
-/*        width: 100px;*/
-/*        height: 100px;*/
-/*    }*/
-/*    .btn-1{*/
-/*        position: fixed;*/
-/*        bottom: 20px;*/
-/*        left: 65%;*/
-/*        right: 3px;*/
-/*        height: 50px;*/
-/*        width: 50px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 280px) {*/
-/*    #slides {*/
-/*        display: none;*/
-/*    }*/
-/*}*/
 
 
 
