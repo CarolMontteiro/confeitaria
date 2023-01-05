@@ -551,14 +551,11 @@ li .dropdown {
 }
 
 .info-compra-box {
-    display: inline-block;
-    width: 364px;
-    margin: 10px;
-    padding: 10px;
-}
-
-.info-compra-box {
-    display: inline-block;
+    display: block;
+    width: 33.3%;
+    background: #99C8EF;
+    /*margin: 10px;*/
+    /*padding: 10px;*/
 }
 
 .img-info img {
@@ -1038,14 +1035,12 @@ form button:hover {
 }
 
 #contato .container{
-    /*background: aquamarine;*/
     display: flex;
+    position: relative;
 }
 
 #info-img{
-    float: left;
     width: 33.3%;
-    /*background: #99C8EF;*/
 }
 
 #info-img img{
@@ -1054,34 +1049,27 @@ form button:hover {
 }
 
 #info-contato{
-    float: left;
     width: 33.3%;
     margin-top: 19px;
-    /*background: darkkhaki ;*/
 }
 
 .info-box-contato{
-    /*background: #bd8c8c;*/
     margin: 25px 0 0 20px;
 }
 
 .info-box-contato i{
-    /*background: #f8f8f8;*/
-    color: #642b18;
-    float: left;
-    padding: 3px 5px;
+    margin-right: 5px;
+    color: #595858;
 }
 
-.info-box-contato h3{
-    color: #642b18;
-    padding: 3px 0;
-    /*background: #727070;*/
+.info-box-contato span{
+    font-size: 18px;
+    color: #333232;
 }
 
 .info-box-contato p, .info-box-contato a{
-    /*background: #99C8EF;*/
-    margin-left: 6px;
-    margin-top: 5px;
+    display: block;
+    margin: 5px 0;
     color: #727070;
 }
 
@@ -1090,10 +1078,8 @@ form button:hover {
 }
 
 #form-contato{
-    float: left;
     width: 33.4%;
-    margin: 43px 15px 0 0;
-    /*background: darksalmon;*/
+    margin: 43px 0;
 }
 
 #form-contato form {
@@ -1104,8 +1090,7 @@ form button:hover {
 #form-contato form label {
     margin-bottom: 5px;
     font-size: 18px;
-    color: #642b18;
-    font-weight: bold;
+    color: #333232;
 }
 
 #form-contato form input {
@@ -1115,7 +1100,7 @@ form button:hover {
     margin-bottom: 12px;
     border-radius: 5px;
     font-size: 15px;
-    background: #FFC4D2;
+    background: rgba(255, 196, 210, 0.16);
 }
 
 #form-contato form input:focus, #form-contato textarea:focus {
@@ -1127,7 +1112,7 @@ form button:hover {
     border: none;
     padding: 5px;
     outline: none;
-    background: #FFC4D2;
+    background: rgba(255, 196, 210, 0.16);
     font-size: 15px;
 }
 
@@ -1140,6 +1125,79 @@ form button:hover {
     transition: 0.3s;
 }
 
+
+@media (max-width: 900px) {
+
+    #contato .container{
+        display: block;
+        position: relative;
+    }
+
+    #info-img{
+        background: #f8f8f8;
+        width: 100%;
+    }
+
+    #info-img img {
+        width: 30%;
+        margin: 0 35%;
+        padding: 0;
+    }
+
+    #info-contato{
+        width: 50%;
+        float: left;
+        margin-top: 0;
+    }
+
+    .info-box-contato{
+        padding: 10px;
+        margin: 0;
+    }
+
+    #form-contato{
+        float: left;
+        width: 50%;
+        margin: 23px 0;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #info-img{
+        display: none;
+    }
+
+    #info-contato{
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    #form-contato{
+        width: 100%;
+        margin: 0;
+        float: none;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 463px) {
+    
+    .titulo-contato h2 {
+        
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 400px ) {
+
+    .titulo-contato h2 {
+
+        font-size: 38px;
+    }
+}
+/*######################          FIM DA PÁGINA CONTATO        ######################################################*/
 
 
 
