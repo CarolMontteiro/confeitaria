@@ -815,7 +815,7 @@ form button:hover {
 }
 
 .link-suporte li{
-    margin: 5px 0 10px 36px;
+    padding: 5px 15%;
 }
 
 .link-suporte a:hover, .box-footer-icons span:hover{
@@ -839,20 +839,19 @@ form button:hover {
 }
 
 .box-footer-icons{
-    font-size: 25px;
-    margin: 25px 0 0 65px ;
+    padding: 20px 20%;
 }
 
 .box-footer-icons a{
-    margin-left: 12px;
+    font-size: 20px;
+    margin-left: 24px;
 }
 
 .box-footer-icons span{
     color: #727070;
 }
 
-
-@media (max-width: 990px) {
+@media (max-width: 1026px) {
 
     .box-footer-logo-title h1{
         font-size: 40px;
@@ -869,7 +868,7 @@ form button:hover {
     }
 
     .link-suporte li{
-        margin: 5px 40px;
+        padding: 5px 22%;
     }
 
     .link-suporte a{
@@ -886,7 +885,7 @@ form button:hover {
     }
 
     .box-footer-icons a{
-        margin-left: 11px;
+        margin-left: 15px;
     }
 }
 
@@ -913,21 +912,20 @@ form button:hover {
     }
 
     .link-suporte li{
-        margin: 5px 20px;
+        padding: 5px 18%;
     }
 
     .link-suporte a{
-        padding: 0 13px;
-        font-size: 12px;
+        font-size: 13px;
     }
 
     #box-card img{
         margin-top: 11px;
     }
 
-    .box-footer-icons{
-        font-size: 17px;
-        margin: 25px 0 0 53px ;
+    .box-footer-icons a{
+        font-size: 16px;
+        margin-left: 16px;
     }
 }
 
@@ -965,13 +963,12 @@ form button:hover {
         float: left;
     }
 
-    #box-suporte a{
-        margin-left: 30px;
-        font-size: 14px;
+    .link-suporte li{
+        padding: 5px 28%;
     }
 
-    .link-suporte li{
-        margin: 5px 25px;
+    #box-suporte a{
+        font-size: 14px;
     }
 
     #box-card{
@@ -986,18 +983,9 @@ form button:hover {
     #box-icons{
         width: 25%;
     }
-
-    .box-footer-icons{
-        font-size: 20px;
-        margin: 25px 0 0 40px ;
-    }
-
-    .box-footer-icons a{
-        margin-left: 10px;
-    }
 }
 
-@media (max-width: 625px) {
+@media (max-width: 777px) {
 
     #box-suporte{
         width: 100%;
@@ -1005,20 +993,27 @@ form button:hover {
 
     #box-suporte h3, #box-card h3, #box-icons h3{
         font-size: 16px;
-        margin-top: 15px;
+        padding: 15px 0 3px 25px;
+        text-align: left;
+    }
+
+    .link-suporte li{
+        padding: 5px 23px;
     }
 
     #box-suporte a{
-        margin-left: 38%;
+        text-align: left;
+        margin: 0;
+        padding: 5px 0;
         font-size: 16px;
     }
 
     #box-card{
-        width: 100%;
+        width: 70%;
     }
 
     #box-card img{
-        padding: 30px;
+        padding: 20px;
         margin: 0;
     }
 
@@ -1027,44 +1022,16 @@ form button:hover {
     }
 
     .box-footer-icons{
-        font-size: 12px;
-        margin: 25px 0 0 36% ;
+        margin: 0;
+        padding: 15px 13px;
     }
 
     .box-footer-icons span{
-        margin-left: 10px;
-        font-size: 35px;
+        text-align: left;
+        font-size: 25px;
     }
 }
 
-@media (max-width: 520px) {
-
-    #box-suporte a{
-        margin-left: 33%;
-        font-size: 16px;
-    }
-
-    .box-footer-icons{
-        margin: 25px 0 0 36%;
-    }
-
-    .box-footer-icons span{
-        margin-left: 6px;
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 450px) {
-
-    #box-suporte a{
-        margin-left: 30%;
-        font-size: 18px;
-    }
-
-    .box-footer-icons{
-        margin: 25px 0 0 34%;
-    }
-}
 /*###########      FINAL DO FOOTER      ############################################################################*/
 
 .info-dev {
