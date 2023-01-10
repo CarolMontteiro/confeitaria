@@ -117,9 +117,7 @@ body {
     width: 100%;
 }
 
-/*###################   CSS LOGO MENU   ###########################*/
-
-.padrao-h1-logo-menu {
+.padrao-h1-logo-menu {/*####  CSS LOGO MENU  #####*/
     font-size: 47px;
     font-family: 'Dancing Script', cursive;
     color: #e53977;
@@ -129,14 +127,9 @@ body {
     text-transform: uppercase;
     font-size: 12px;
     color: rgb(72, 70, 70)
-}
-/*###################  FINAL DO CSS LOGO MENU   ###########################*/
+}/*#### FINAL DO CSS LOGO MENU ####*/
 
-
-
-/*##################      CSS LOGO FOOTER        #########################*/
-
-.padrao-h1-logo-footer {
+.padrao-h1-logo-footer {/*####  CSS LOGO FOOTER  #####*/
     font-size: 35px;
     font-family: 'Dancing Script', cursive;
     color: #e53977;
@@ -146,9 +139,7 @@ body {
     text-transform: uppercase;
     font-size: 8px;
     color: rgb(72, 70, 70);
-}
-/*###########      FINAL DO CSS LOGO FOOTER        ######################*/
-
+}/*####  FINAL DO CSS LOGO FOOTER  #####*/
 
 #search-box { /*caixa de pesquisa*/
     width: 33.3%;
@@ -169,6 +160,16 @@ body {
     box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
 }
 
+#search-text {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #727070;
+    font-size: 16px;
+    line-height: 30px;
+}
+
 #search-box a {
     position: absolute;
     right: 5px;
@@ -180,16 +181,6 @@ body {
     background-color: #FFC4D2;
     padding: 8px;
     border-radius: 100%;
-}
-
-#search-text {
-    border: none;
-    background: none;
-    outline: none;
-    padding: 0;
-    color: #727070;
-    font-size: 16px;
-    line-height: 30px;
 }
 
 #contato-btn { /*botões links*/
@@ -264,20 +255,18 @@ body {
         padding-top: 20px;
     }
 
+    #logo-description {
+        margin: 24px 0 0 0;
+        width: 55%;
+    }
+
     #logo-img {
         width: 45%;
-        float: left;
         text-align: right;
     }
 
     #logo-img img{
         width: 100px;
-    }
-
-    #logo-description {
-        margin: 24px 0 0 0;
-        float: left;
-        width: 55%;
     }
 
     #login {
@@ -304,85 +293,6 @@ body {
     }
 }
 
-@media (max-width: 600px) {
-
-    #top .container{
-        position: relative;
-    }
-
-    #logo-img img{
-        width: 90px;
-    }
-
-    #logo-description {
-        margin: 24px 0 0 0;
-        float: left;
-        width: 55%;
-    }
-
-    .padrao-h1-logo-menu {
-        font-size: 40px;
-    }
-
-    .padrao-p-logo-menu {
-        font-size: 10px;
-    }
-
-    #login {
-        position: absolute;
-        right: 5% ;
-        top: 23%;
-    }
-
-    #login a{
-        padding: 10px;
-        border-radius: 9px;
-    }
-
-    #search-box { /*caixa de pesquisa*/
-        width: 50%;
-        margin: 30px 25% 0 25%;
-        height: 46px;
-        padding: 6px;
-    }
-
-    #search-text{
-        font-size: 15px;
-        line-height: 25px;
-    }
-
-    #search-btn i { /*icone lupa*/
-        padding: 8px;
-    }
-
-    #search-box a {
-        position: absolute;
-        right: 10px;
-        top: 10px;
-    }
-
-    #contato-btn { /*botões links*/
-        width: 100%;
-        float: inherit;
-        justify-content: center;
-        height: 80px;
-    }
-
-    #contato-btn i {
-        width: 32px;
-        height: 32px;
-    }
-
-    #contato-btn span {
-        margin: 5px;
-    }
-
-    .btn-1, .btn-2 {
-        width: 40px;
-        height: 40px;
-    }
-}
-
 @media (max-width: 486px) {
 
     #logo-img img{
@@ -396,7 +306,6 @@ body {
     #login {
         position: absolute;
         right: 3% ;
-        top: 23%;
     }
 
     #login a{
@@ -406,8 +315,6 @@ body {
     }
 
     #search-box { /*caixa de pesquisa*/
-        width: 50%;
-        margin: 30px 25% 0 25%;
         height: 43px;
         padding: 5px;
     }
@@ -417,12 +324,7 @@ body {
         line-height: 25px;
     }
 
-    #search-btn i { /*icone lupa*/
-        padding: 8px;
-    }
-
     #search-box a {
-        position: absolute;
         right: 10px;
         top: 9px;
     }
@@ -436,12 +338,6 @@ body {
 
     .padrao-h1-logo-menu {
         font-size: 33px;
-    }
-
-    #login {
-        position: absolute;
-        right: 3% ;
-        top: 23%;
     }
 }
 /*############################    FINAL DO TOP      ##################################################################*/
@@ -497,10 +393,6 @@ body {
 
 /*#################      FINAL MENU LISTA          ###################################################################*/
 
-
-
-
-
 /*###############        BANNER          ############################################################################*/
 #slides img {
     width: 100%;
@@ -517,6 +409,13 @@ body {
     padding: 10px;
 }
 
+.img-info img {
+    float: left;
+    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+}
+
 .info-compra-box h3 {
     margin-top: 20px;
     text-transform: uppercase;
@@ -528,13 +427,6 @@ body {
     text-transform: uppercase;
     font-size: 13px;
     color: #642b18;
-}
-
-.img-info img {
-    float: left;
-    margin-right: 10px;
-    width: 70px;
-    height: 70px;
 }
 
 @media (max-width: 901px ) {
@@ -572,6 +464,12 @@ body {
         width: 100%;
     }
 
+    .img-info img {
+        margin-right: 10px;
+        width: 70px;
+        height: 70px;
+    }
+
     .info-compra-box h3 {
         margin-top: 20px;
         font-size: 14px;
@@ -580,15 +478,7 @@ body {
     .info-compra-box p {
         font-size: 13px;
     }
-
-    .img-info img {
-        margin-right: 10px;
-        width: 70px;
-        height: 70px;
-    }
 }
-
-/*###############      TEXTO PRE-CARD    ############################################*/
 
 #apresentation {
     padding-top: 10px;
@@ -616,8 +506,6 @@ body {
     font-size: 16px;
 }
 
-
-/*############    CARDS    ####################################################################################3*/
 #cards .container {
     display: flex;
     justify-content: center;
@@ -683,21 +571,12 @@ body {
     }
 }
 
-@media (max-width: 445px) {
-
-    #cards .container{
-        width: 60%;
-    }
-}
-
 @media (max-width: 390px) {
 
     #cards .container{
         width: 75%;
     }
 }
-/*###############    FINAL DOS CARDS    ##################################################################*/
-
 
 .icon img {
     display: flex;
@@ -761,6 +640,16 @@ form button:hover {
     margin-top: -4px;
 }
 
+#footer h3{
+    margin-top: 40px;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #642b18;
+    font-family: Gill Sans, sans-serif;
+}
+
 #box-footer-logo{
     width: 25%;
     float: left;
@@ -790,29 +679,19 @@ form button:hover {
     font-size: 11px;
 }
 
-#box-suporte h3, #box-card h3, #box-icons h3{
-    margin-top: 40px;
-    padding: 10px 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-    color: #642b18;
-    font-family: Gill Sans, sans-serif;
-}
-
 #box-suporte{
     width: 20%;
     float: left;
+}
+
+.link-suporte li{
+    padding: 5px 15%;
 }
 
 .link-suporte a{
     color: #727070;
     font-size: 15px;
     font-family: Gill Sans, sans-serif;
-}
-
-.link-suporte li{
-    padding: 5px 15%;
 }
 
 .link-suporte a:hover, .box-footer-icons span:hover{
@@ -858,7 +737,7 @@ form button:hover {
         font-size: 10px;
     }
 
-    #box-suporte h3, #box-card h3, #box-icons h3{
+    #footer h3{
         margin-top: 39px;
         padding: 9px 0;
         font-size: 14px;
@@ -870,11 +749,6 @@ form button:hover {
 
     .link-suporte a{
         font-size: 13px;
-    }
-
-    #box-card img{
-        margin-top: 15px;
-        width: 100%;
     }
 
     .box-footer-icons{
@@ -889,31 +763,16 @@ form button:hover {
 @media (max-width: 877px){
 
     .box-footer-logo-title h1{
-        margin: 25px 0 1px 0;
         font-size: 37px;
     }
 
-    .box-footer-logo-title p{
-        font-size: 10px;
-    }
-
-    #box-suporte h3, #box-card h3, #box-icons h3{
+    #footer h3{
         margin-top: 37px;
-        padding: 9px 0;
         font-size: 13px;
-    }
-
-    #box-suporte{
-        width: 20%;
-        float: left;
     }
 
     .link-suporte li{
         padding: 5px 18%;
-    }
-
-    .link-suporte a{
-        font-size: 13px;
     }
 
     #box-card img{
@@ -930,13 +789,10 @@ form button:hover {
 
     #box-footer-logo{
         width: 100%;
-        float: left;
-        background-image: linear-gradient(#f8f8f8, #FFC4D2);
     }
 
     .box-footer-img{
         width: 50%;
-        float: left;
     }
 
     .box-footer-img img{
@@ -947,17 +803,15 @@ form button:hover {
 
     .box-footer-logo-title{
         width: 50%;
-        float: left;
     }
 
-    #box-suporte h3, #box-card h3, #box-icons h3{
+    #footer h3{
         margin-top: 0;
         padding: 8px 0;
     }
 
     #box-suporte{
         width: 30%;
-        float: left;
     }
 
     .link-suporte li{
@@ -974,11 +828,6 @@ form button:hover {
 
     #box-card img{
         margin-top: 15px;
-        width: 100%;
-    }
-
-    #box-icons{
-        width: 25%;
     }
 }
 
@@ -988,7 +837,7 @@ form button:hover {
         width: 100%;
     }
 
-    #box-suporte h3, #box-card h3, #box-icons h3{
+    #footer h3{
         font-size: 16px;
         padding: 15px 0 3px 25px;
         text-align: left;
@@ -1010,7 +859,7 @@ form button:hover {
     }
 
     #box-card img{
-        padding: 20px;
+        padding: 15px 0 0 20px;
         margin: 0;
     }
 
@@ -1043,8 +892,6 @@ form button:hover {
     -moz-box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.55);
     box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.55);
 }
-
-
 
 /*#############     SECTION PÁGINA CONTATO    #######################################################################*/
 
@@ -1158,11 +1005,9 @@ form button:hover {
 
     #contato .container{
         display: block;
-        position: relative;
     }
 
     #info-img{
-        background: #f8f8f8;
         width: 100%;
     }
 
@@ -1199,7 +1044,6 @@ form button:hover {
     #info-contato{
         width: 100%;
         float: none;
-        margin: 0;
     }
 
     #form-contato{
