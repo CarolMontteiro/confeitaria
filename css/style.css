@@ -1133,6 +1133,34 @@ form button:hover {
 .list-box p {
     margin-top: 10px;
 }
+@media (max-width: 792px) {
+
+    .list-box {
+        width: 25%;
+    }
+}
+
+@media (max-width: 610px) {
+
+    .list-box {
+        width: 33.3%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .list-box {
+        width: 50%;
+    }
+}
+
+@media (max-width: 412px) {
+
+    .title-list h3 {
+       font-size: 20px;
+    }
+}
+
 
 
 
