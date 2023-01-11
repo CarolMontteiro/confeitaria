@@ -1067,35 +1067,35 @@ form button:hover {
     padding: 60px 0;
 }
 
-.title-list {
+.title-list-service {
     background: #F6EAED;
     display: flex;
     justify-content: center;
     padding: 10px;
 }
 
-.title-list h3 {
+.title-list-service h3 {
     text-transform: uppercase;
     color: #3a3a3a;
     font-size: 25px;
     margin: 10px 0;
 }
 
-.list-box {
+.list-box-service {
     float: left;
     text-align: center;
     width: 20%;
 }
 
-.list-box:hover {
+.list-box-service:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.list-box img {
+.list-box-service img {
     width: 100%;
 }
 
-.list-box a {
+.list-box-service a {
     padding: 20px;
     width: 100%;
     display: block;
@@ -1104,33 +1104,33 @@ form button:hover {
     color: #595858;
 }
 
-.list-box a:hover {
+.list-box-service a:hover {
     color: #E53977;
 }
 
-.list-box p {
+.list-box-service p {
     margin-top: 10px;
 }
 @media (max-width: 792px) {
-    .list-box {
+    .list-box-service{
         width: 25%;
     }
 }
 
 @media (max-width: 610px) {
-    .list-box {
+    .list-box-service {
         width: 33.3%;
     }
 }
 
 @media (max-width: 500px) {
-    .list-box {
+    .list-box-service{
         width: 50%;
     }
 }
 
 @media (max-width: 412px) {
-    .title-list h3 {
+    .title-list-service h3 {
        font-size: 5vw;
     }
 }
