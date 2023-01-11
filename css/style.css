@@ -876,9 +876,7 @@ form button:hover {
         text-align: left;
         font-size: 25px;
     }
-}
-
-/*###########      FINAL DO FOOTER      ############################################################################*/
+}/*####  FINAL DO FOOTER  ####*/
 
 .info-dev {
     float: left;
@@ -893,9 +891,7 @@ form button:hover {
     box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.55);
 }
 
-/*#############     SECTION PÁGINA CONTATO    #######################################################################*/
-
-.titulo-contato {
+.titulo-contato {/*#### PÁGINA CONTATO #####*/
     background: #FFC4D2;
     display: flex;
     justify-content: center;
@@ -1066,11 +1062,69 @@ form button:hover {
     .titulo-contato h2 {
         font-size: 38px;
     }
+}/*######   FIM DA PÁGINA CONTATO     #######*/
+
+
+#title-service {/*#### PÁGINA DE SERVIÇOS #####*/
+    background: #FFC4D2;
+    display: flex;
+    justify-content: center;
+    padding: 55px;
 }
-/*######################          FIM DA PÁGINA CONTATO        ######################################################*/
 
+#title-service h2 {
+    color: #e53977;
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    font-weight: bold;
+}
 
+.title-list{
+    background: #F6EAED ;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
 
+.title-list h3{
+    text-transform: uppercase;
+    color: #3a3a3a;
+    font-size: 20px;
+    margin: 10px 0 ;
+}
+
+.list-box{
+    display: flex;
+    float: left;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 1rem;
+    margin: 1%;
+    width: 18%;
+    background: white;
+
+}
+
+.e-list img{
+    width: 100%;
+}
+
+.list-box a{
+    padding: 10px;
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #595858;
+}
+
+.list-box a:hover{
+    color: #E53977;
+}
+
+.list-box:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 
 
