@@ -91,7 +91,7 @@ body {
     zoom: 1;
 }
 
-/*########        INÍCIO DO TOPO          ###########################################################################*/
+/*  INÍCIO DO TOPO  */
 #top {
     background-image: linear-gradient(#f8f8f8, #FFC4D2);
 }
@@ -116,7 +116,7 @@ body {
     width: 100%;
 }
 
-/*####  CSS LOGO MENU  #####*/
+/*  CSS LOGO MENU  */
 .padrao-h1-logo-menu {
     font-size: 47px;
     font-family: 'Dancing Script', cursive;
@@ -128,9 +128,9 @@ body {
     font-size: 12px;
     color: rgb(72, 70, 70)
 }
-/*#### FINAL DO CSS LOGO MENU ####*/
+/* FINAL DO CSS LOGO MENU */
 
-/*####  CSS LOGO FOOTER  #####*/
+/* CSS LOGO FOOTER  */
 .padrao-h1-logo-footer {
     font-size: 35px;
     font-family: 'Dancing Script', cursive;
@@ -142,7 +142,7 @@ body {
     font-size: 8px;
     color: rgb(72, 70, 70);
 }
-/*####  FINAL DO CSS LOGO FOOTER  #####*/
+/*  FINAL DO CSS LOGO FOOTER  */
 
 #search-box { /*caixa de pesquisa*/
     width: 33.3%;
@@ -341,9 +341,9 @@ body {
     }
 }
 
-/*############################    FINAL DO TOP      ##################################################################*/
+/*  FINAL DO TOP  */
 
-/*##############        MENU LISTA       #################################################################3###########*/
+/*  MENU LISTA  */
 
 #menu-item { /*borda em traços*/
     border-top: 2px dashed #ce698f;
@@ -389,13 +389,13 @@ body {
         text-align: left;
     }
 }
-/*#################      FINAL MENU LISTA          ###################################################################*/
+/*  FINAL MENU LISTA  */
 
-/*###############        BANNER          ############################################################################*/
+/*  BANNER  */
 #slides img {
     width: 100%;
 }
-/*###############       FINAL BANNER          ########################################################################*/
+/*  FINAL BANNER  */
 
 #info-compra .container {
     background: #fabfcd;
@@ -626,7 +626,7 @@ form button:hover {
     font-weight: bold;
 }
 
-/*##############    INÍCIO DO FOOTER      #######################################################################*/
+/*  INÍCIO DO FOOTER   */
 #footer {
     margin-top: -4px;
 }
@@ -864,7 +864,7 @@ form button:hover {
         font-size: 25px;
     }
 }
-/*####  FINAL DO FOOTER  ####*/
+/*  FINAL DO FOOTER  */
 
 .info-dev {
     float: left;
@@ -1046,9 +1046,9 @@ form button:hover {
         font-size: 38px;
     }
 }
-/*######   FIM DA PÁGINA CONTATO     #######*/
+/*  FIM DA PÁGINA CONTATO  */
 
-/*#### PÁGINA DE SERVIÇOS #####*/
+/* PÁGINA DE SERVIÇOS  */
 #title-service {
     background: #FFC4D2;
     display: flex;
@@ -1096,12 +1096,13 @@ form button:hover {
 }
 
 .list-box-service a {
-    padding: 20px;
+    padding: 15px;
     width: 100%;
+    margin-bottom: 25px;
     display: block;
     text-transform: uppercase;
     font-size: 13px;
-    color: #595858;
+    color: #642b18;
 }
 
 .list-box-service a:hover {
@@ -1109,7 +1110,8 @@ form button:hover {
 }
 
 .list-box-service p {
-    margin-top: 10px;
+    margin: 10px 0;
+
 }
 @media (max-width: 792px) {
     .list-box-service{
@@ -1132,5 +1134,76 @@ form button:hover {
 @media (max-width: 412px) {
     .title-list-service h3 {
        font-size: 5vw;
+    }
+}
+
+/*  PÁGINA CONTEUDO-SERVIÇO  */
+#serv-content{
+    padding: 40px 0;
+}
+
+#serv-content .container{
+    background-color: #F6EAED;
+    border: 1px solid #333232;
+}
+
+.content-title h3{
+    width: 25%;
+    float: left;
+    color: #E53977;
+    text-transform: uppercase;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.content-title p{
+    width: 75%;
+    float: left;
+    padding: 10px;
+    color: #642b18;
+    line-height: 1.5;
+}
+
+.columns-serv{
+    width: 25%;
+    float: left;
+    padding: 20px;
+}
+
+.columns-serv img{
+    width: 100%;
+}
+
+.columns-serv img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.columns-serv h3{
+    padding: 10px 0 0 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #E53977;
+}
+
+.columns-serv p{
+    padding: 10px 0;
+    color: #642b18;
+}
+
+@media (max-width: 900px) {
+    .columns-serv{
+        width: 33.3%;
+    }
+}
+
+@media (max-width: 620px) {
+    .columns-serv{
+        width: 50%;
+    }
+}
+
+@media (max-width: 420px){
+    .columns-serv{
+        padding: 10px;
     }
 }
