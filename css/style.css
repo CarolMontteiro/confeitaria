@@ -1231,16 +1231,16 @@ form button:hover {
     line-height: 1.4;
 }
 
-#gallery-serviço .container {
-    display: flex;
-    gap: 2vw;
-    padding: 3vw 2vw;
-}
-
 .gallery-items {
     width: 18%;
     box-shadow: 5px 5px 5px #0006;
     flex-grow: 1;
+}
+
+#img-items {
+    display: flex;
+    gap: 2vw;
+    padding: 3vw 2vw;
 }
 
 .gallery-items:hover {
