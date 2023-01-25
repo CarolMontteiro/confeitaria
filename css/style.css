@@ -488,11 +488,11 @@ body {
     }
 }
 
-.apresent {
+#kit-festa .apresent {
     padding: 20px;
 }
 
-.apresent h2 {
+#kit-festa .apresent h2 {
     text-align: center;
     color: #e53977;
     font-weight: bold;
@@ -500,14 +500,14 @@ body {
     font-size: 40px;
 }
 
-.apresent p {
+#kit-festa .apresent p {
     margin: 10px 20%;
     text-align: center;
     color: #642b18;
     line-height: 1.3;
 }
 
-.card {
+#kit-festa .card {
     width: 31.3%;
     border: solid 20px white;
     margin: 0 3% 30px 0;
@@ -517,19 +517,25 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card:last-child {
+#kit-festa .card:last-child {
     margin-right: 0;
 }
 
-.card:hover {
+#kit-festa .card:hover {
     transform: scale(1.1);
 }
 
-.card img {
+#kit-festa .card img {
     width: 100%;
 }
 
-.card h3 {
+#kit-festa .card-img{
+    overflow: hidden;
+    width: 100%;
+    height: 364px;
+}
+
+#kit-festa .card h3 {
     margin-top: 4px;
     font-family: 'Dancing Script', cursive;
     color: #e53977;
@@ -537,46 +543,49 @@ body {
     font-size: 25px;
 }
 
-.card p {
+#kit-festa .card p {
     color: #642b18;
     margin: 10px 0;
 }
 
-.card span {
+#kit-festa .card span {
     display: block;
     padding: 6px 0;
     color: #642b18;
     text-transform: uppercase;
 }
 
-.card:hover span {
+#kit-festa .card:hover span {
     background-color: #E53977;
     color: white;
 }
 
+@media (max-width: 1158px) {
+    #kit-festa .card-img{
+        overflow: inherit;
+        height: inherit;
+    }
+}
+
 @media (max-width: 835px) {
-    .card {
+    #kit-festa .card {
         border: solid 12px white;
     }
 }
 
 @media (max-width: 700px) {
-    .card {
+    #kit-festa .card {
         width: 50%;
         margin: 0 25% 30px 25%;
-    }
-
-    .card:hover {
-        transform: none;
     }
 }
 
 @media (max-width: 500px) {
-    .apresent p {
+    #kit-festa .apresent p {
         margin: 15px 0;
     }
 
-    .card {
+    #kit-festa .card {
         width: 70%;
         margin: 0 15% 30px 15%;
     }
