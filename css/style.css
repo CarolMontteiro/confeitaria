@@ -529,7 +529,7 @@ body {
     width: 100%;
 }
 
-#kit-festa .card-img{
+#kit-festa .card-img {
     overflow: hidden;
     width: 100%;
     height: 364px;
@@ -561,7 +561,7 @@ body {
 }
 
 @media (max-width: 1158px) {
-    #kit-festa .card-img{
+    #kit-festa .card-img {
         overflow: inherit;
         height: inherit;
     }
@@ -1227,7 +1227,7 @@ form button:hover {
     }
 }
 
-#breadcrumb{
+#breadcrumb {
     background-color: #F6EAED;
     padding: 20px 0;
     text-align: center;
@@ -1249,23 +1249,28 @@ form button:hover {
     font-size: 14px;
 }
 
-#title-gallery-serv-p {
-    padding: 10px;
+#conteudo-serviço h2 {
+    text-align: center;
+    padding: 15px;
+    color: #E53977;
+}
+
+#conteudo-serviço p {
+    padding: 0 25px;
     text-align: center;
     color: #642b18;
     line-height: 1.4;
-}
-
-.gallery-items {
-    width: 18%;
-    box-shadow: 5px 5px 5px #0006;
-    flex-grow: 1;
 }
 
 #img-items {
     display: flex;
     gap: 2vw;
     padding: 3vw 2vw;
+}
+
+.gallery-items {
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
 }
 
 .gallery-items:hover {
@@ -1275,4 +1280,15 @@ form button:hover {
 .gallery-items img {
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 800px) {
+    #img-items {
+        display: inline-block;
+        padding: 20px 7vw;
+    }
+
+    .gallery-items {
+        box-shadow: none;
+    }
 }
