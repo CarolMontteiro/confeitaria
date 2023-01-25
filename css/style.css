@@ -1083,20 +1083,6 @@ form button:hover {
     padding: 60px 0;
 }
 
-.title-list-service {
-    background: #F6EAED;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-.title-list-service h3 {
-    text-transform: uppercase;
-    color: #3a3a3a;
-    font-size: 25px;
-    margin: 10px 0;
-}
-
 .list-box-service {
     float: left;
     text-align: center;
