@@ -1241,28 +1241,26 @@ form button:hover {
     }
 }
 
-#atalho {
+#breadcrumb{
     background-color: #F6EAED;
     padding: 20px 0;
-    margin: 20px 0 10px 0;
     text-align: center;
     color: #E53977;
     text-transform: uppercase;
 }
 
-#atalho ul {
+#breadcrumb ul {
     display: inline;
 }
 
-#atalho li {
+#breadcrumb li {
     display: inline;
 }
 
-#atalho a {
+#breadcrumb a {
     display: inline-block;
     color: #642b18;
     font-size: 14px;
-    margin-right: 4px;
 }
 
 #title-gallery-serv-p {
