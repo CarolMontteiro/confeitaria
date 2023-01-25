@@ -1165,6 +1165,7 @@ form button:hover {
 #serv-content .container {
     background-color: #F6EAED;
     border: 1px solid #333232;
+    padding: 20px;
 }
 
 .content-title h3 {
@@ -1172,14 +1173,13 @@ form button:hover {
     float: left;
     color: #E53977;
     text-transform: uppercase;
-    padding: 15px 0;
+    padding: 0 15px 0 0;
     text-align: center;
 }
 
 .content-title p {
     width: 75%;
     float: left;
-    padding: 10px;
     color: #642b18;
     line-height: 1.5;
 }
@@ -1213,6 +1213,18 @@ form button:hover {
 @media (max-width: 900px) {
     .columns-serv {
         width: 33.3%;
+    }
+}
+
+@media (max-width: 702px) {
+    .content-title h3 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content-title p {
+        width: 100%;
+        margin-top: 10px;
     }
 }
 
