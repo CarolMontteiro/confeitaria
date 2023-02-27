@@ -92,6 +92,18 @@ body {
 }
 
 /*  INÍCIO DO TOPO  */
+:root {
+    --cor-primaria: #FFC4D2;
+    --cor-secundaria: #e53977;
+    --cor-terciaria: #FFFFFF;
+    --cor-quaternaria: #642b18;
+    --cor-quinario: #727070;
+    --background-image: linear-gradient(#f8f8f8, #FFC4D2);
+    --background-btn: linear-gradient(#e53977, #99C8EF);
+    --shadow: box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --breadcrumb: #F6EAED;
+}
+
 #top {
     background-image: linear-gradient(#f8f8f8, #FFC4D2);
 }
