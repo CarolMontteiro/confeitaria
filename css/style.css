@@ -97,15 +97,14 @@ body {
     --cor-secundaria: #e53977;
     --cor-terciaria: #FFFFFF;
     --cor-quaternaria: #642b18;
-    --cor-quinario: #727070;
+    --cor-quinario: rgb(72, 70, 70);
     --background-image: linear-gradient(#f8f8f8, #FFC4D2);
     --background-btn: linear-gradient(#e53977, #99C8EF);
-    --shadow: box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     --breadcrumb: #F6EAED;
 }
 
 #top {
-    background-image: linear-gradient(#f8f8f8, #FFC4D2);
+    background-image: var(--background-image);
 }
 
 #logo-container {
@@ -132,13 +131,13 @@ body {
 .padrao-h1-logo-menu {
     font-size: 47px;
     font-family: 'Dancing Script', cursive;
-    color: #e53977;
+    color: var(--cor-secundaria);
 }
 
 .padrao-p-logo-menu {
     text-transform: uppercase;
     font-size: 12px;
-    color: rgb(72, 70, 70)
+    color: var(--cor-quinario);
 }
 
 /* FINAL DO CSS LOGO MENU */
@@ -147,13 +146,13 @@ body {
 .padrao-h1-logo-footer {
     font-size: 35px;
     font-family: 'Dancing Script', cursive;
-    color: #e53977;
+    color: var(--cor-secundaria);
 }
 
 .padrao-p-logo-footer {
     text-transform: uppercase;
     font-size: 8px;
-    color: rgb(72, 70, 70);
+    color: var(--cor-quinario)
 }
 
 /*  FINAL DO CSS LOGO FOOTER  */
@@ -169,7 +168,7 @@ body {
     width: 100%;
     height: 40px;
     padding: 0 5px;
-    background: white;
+    background: var(--cor-terciaria);
     border-radius: 30px;
     align-items: center;
     -webkit-box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
@@ -182,7 +181,7 @@ body {
     background: none;
     outline: none;
     padding: 0;
-    color: #727070;
+    color: var(--cor-quinario);
     font-size: 16px;
     line-height: 30px;
 }
@@ -194,8 +193,8 @@ body {
 }
 
 #search-btn i { /*icone lupa*/
-    color: #e53977;
-    background-color: #FFC4D2;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
     padding: 8px;
     border-radius: 100%;
 }
@@ -212,7 +211,7 @@ body {
 }
 
 .btn-1, .btn-2 {
-    background: white;
+    background: var(--cor-terciaria);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -225,7 +224,7 @@ body {
 }
 
 .btn-1:hover, .btn-2:hover {
-    background-image: linear-gradient(#e53977, #99C8EF);
+    background-image: var(--background-btn);
 }
 
 #contato-btn span {
@@ -233,20 +232,20 @@ body {
 }
 
 #contato-btn i {
-    background: #FFC4D2;
+    background: var(--cor-primaria);
     width: 40px;
     height: 40px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #e53977;
+    color: var(--cor-secundaria);
     font-weight: 600;
 }
 
 #login a { /*botão login*/
-    background: white;
-    color: #E53977;
+    background: var(--cor-terciaria);
+    color: var(--cor-secundaria);
     font-weight: bold;
     padding: 15px;
     border-radius: 10px;
@@ -256,8 +255,8 @@ body {
 }
 
 #login:hover a {
-    color: white;
-    background: #E53977;
+    color: var(--cor-terciaria);
+    background: var(--cor-secundaria);
     transition: 0.4s;
 }
 
@@ -354,7 +353,6 @@ body {
         font-size: 33px;
     }
 }
-
 /*  FINAL DO TOP  */
 
 /*  MENU LISTA  */
@@ -375,7 +373,7 @@ body {
 }
 
 #fixed li:hover {
-    background: #E53977;
+    background: var(--cor-secundaria);
     transition: 0.4s;
 }
 
@@ -385,11 +383,11 @@ body {
     padding: 20px 0;
     font-size: 14px;
     font-weight: bold;
-    color: #595858;
+    color: var(--cor-quinario);
 }
 
 #fixed a:hover {
-    color: #ffffff;
+    color: var(--cor-terciaria);
 }
 
 @media (max-width: 700px) {
@@ -403,18 +401,16 @@ body {
         text-align: left;
     }
 }
-
 /*  FINAL MENU LISTA  */
 
 /*  BANNER  */
 #slides img {
     width: 100%;
 }
-
 /*  FINAL BANNER  */
 
 #info-compra {
-    background: #fabfcd;
+    background: var(--cor-primaria);
 }
 
 .info-compra-box1, .info-compra-box {
@@ -434,13 +430,13 @@ body {
     margin-top: 20px;
     text-transform: uppercase;
     font-size: 14px;
-    color: white;
+    color: var(--cor-terciaria);
 }
 
 .info-compra-box1 p, .info-compra-box p {
     text-transform: uppercase;
     font-size: 13px;
-    color: #642b18;
+    color: var(--cor-quaternaria);
 }
 
 @media (max-width: 901px ) {
@@ -506,7 +502,7 @@ body {
 
 #kit-festa .apresent h2 {
     text-align: center;
-    color: #e53977;
+    color: var(--cor-secundaria);
     font-weight: bold;
     font-family: 'Dancing Script', cursive;
     font-size: 40px;
@@ -515,13 +511,13 @@ body {
 #kit-festa .apresent p {
     margin: 10px 20%;
     text-align: center;
-    color: #642b18;
+    color: var(--cor-quaternaria);
     line-height: 1.3;
 }
 
 #kit-festa .card {
     width: 31.3%;
-    border: solid 20px white;
+    border: solid 20px var(--cor-terciaria);
     margin: 0 3% 30px 0;
     float: left;
     text-align: center;
@@ -550,26 +546,26 @@ body {
 #kit-festa .card h3 {
     margin-top: 4px;
     font-family: 'Dancing Script', cursive;
-    color: #e53977;
+    color: var(--cor-secundaria);
     font-weight: bold;
     font-size: 25px;
 }
 
 #kit-festa .card p {
-    color: #642b18;
+    color: var(--cor-quaternaria);
     margin: 10px 0;
 }
 
 #kit-festa .card span {
     display: block;
     padding: 6px 0;
-    color: #642b18;
+    color: var(--cor-quaternaria);
     text-transform: uppercase;
 }
 
 #kit-festa .card:hover span {
-    background-color: #E53977;
-    color: white;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
 }
 
 @media (max-width: 1158px) {
@@ -581,7 +577,7 @@ body {
 
 @media (max-width: 835px) {
     #kit-festa .card {
-        border: solid 12px white;
+        border: solid 12px var(--cor-terciaria);
     }
 }
 
@@ -605,7 +601,7 @@ body {
 
 #email-box {
     padding: 50px 0;
-    background: #FABFCD;
+    background: var(--cor-primaria);
 }
 
 .info-email {
@@ -617,12 +613,12 @@ body {
     font-family: 'Dancing Script', cursive;
     font-size: 45px;
     font-weight: bold;
-    color: #e53977;
+    color: var(--cor-secundaria);
     text-align: center;
 }
 
 .info-email input {
-    background: white;
+    background: var(--cor-terciaria);
     border: none;
     border-radius: 6px;
     padding: 6px;
@@ -639,16 +635,16 @@ body {
 
 form button {
     padding: 7px;
-    background: #e53977;
+    background: var(--cor-secundaria);
     border: none;
     border-radius: 4px;
-    color: white;
+    color: var(--cor-terciaria);
     cursor: pointer;
 }
 
 form button:hover {
-    background: white;
-    color: #e53977;
+    background: var(--cor-terciaria);
+    color: var(--cor-secundaria);
     font-weight: bold;
 }
 
@@ -663,7 +659,7 @@ form button:hover {
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
-    color: #642b18;
+    color: var(--cor-quaternaria);
     font-family: Gill Sans, sans-serif;
 }
 
@@ -706,13 +702,13 @@ form button:hover {
 }
 
 .link-suporte a {
-    color: #727070;
+    color: var(--cor-quinario);
     font-size: 15px;
     font-family: Gill Sans, sans-serif;
 }
 
 .link-suporte a:hover, .box-footer-icons span:hover {
-    color: #e53977;
+    color: var(--cor-secundaria);
     cursor: pointer;
 }
 
@@ -741,7 +737,7 @@ form button:hover {
 }
 
 .box-footer-icons span {
-    color: #727070;
+    color: var(--cor-quinario);
 }
 
 @media (max-width: 1026px) {
@@ -890,14 +886,13 @@ form button:hover {
         font-size: 25px;
     }
 }
-
 /*  FINAL DO FOOTER  */
 
 .info-dev {
     float: left;
     width: 100%;
-    background-color: #ce698f;
-    color: white;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
     text-align: center;
     padding: 10px 0;
     margin-top: 50px;
@@ -907,14 +902,14 @@ form button:hover {
 }
 
 .titulo-contato { /*#### PÁGINA CONTATO #####*/
-    background: #FFC4D2;
+    background: var(--cor-primaria);
     display: flex;
     justify-content: center;
     padding: 60px;
 }
 
 .titulo-contato h2 {
-    color: #e53977;
+    color: var(--cor-secundaria);
     font-family: 'Dancing Script', cursive;
     font-size: 55px;
     font-weight: bold;
@@ -945,7 +940,7 @@ form button:hover {
 
 .info-box-contato i {
     margin-right: 5px;
-    color: #595858;
+    color: var(--cor-quinario);
 }
 
 .info-box-contato span {
@@ -956,11 +951,11 @@ form button:hover {
 .info-box-contato p, .info-box-contato a {
     display: block;
     margin: 5px 0;
-    color: #727070;
+    color: var(--cor-quinario);
 }
 
 .info-box-contato a:hover {
-    color: #e53977;
+    color: var(--cor-secundaria);
 }
 
 #form-contato {
@@ -976,7 +971,7 @@ form button:hover {
 #form-contato form label {
     margin-bottom: 5px;
     font-size: 18px;
-    color: #333232;
+    color: var(--breadcrumb);
 }
 
 #form-contato form input {
@@ -986,7 +981,7 @@ form button:hover {
     margin-bottom: 12px;
     border-radius: 5px;
     font-size: 15px;
-    background: rgba(255, 196, 210, 0.16);
+    background: var(--breadcrumb);
 }
 
 #form-contato form input:focus, #form-contato textarea:focus {
@@ -998,7 +993,7 @@ form button:hover {
     border: none;
     padding: 5px;
     outline: none;
-    background: rgba(255, 196, 210, 0.16);
+    background: var(--breadcrumb);
     font-size: 15px;
 }
 
@@ -1078,14 +1073,14 @@ form button:hover {
 
 /* PÁGINA DE SERVIÇOS  */
 #title-service {
-    background: #FFC4D2;
+    background: var(--cor-primaria);
     display: flex;
     justify-content: center;
     padding: 55px;
 }
 
 #title-service h2 {
-    color: #e53977;
+    color: var(--cor-secundaria);
     font-family: 'Dancing Script', cursive;
     font-size: 60px;
     font-weight: bold;
@@ -1112,11 +1107,11 @@ form button:hover {
     display: block;
     text-transform: uppercase;
     font-size: 13px;
-    color: #642b18;
+    color: var(--cor-quaternaria);
 }
 
 .list-box-service a:hover {
-    color: #E53977;
+    color: var(--cor-secundaria);
 }
 
 .list-box-service img {
@@ -1169,7 +1164,7 @@ form button:hover {
 .content-title h3 {
     width: 25%;
     float: left;
-    color: #E53977;
+    color: var(--cor-secundaria);
     text-transform: uppercase;
     padding: 0 15px 0 0;
     text-align: center;
@@ -1178,7 +1173,7 @@ form button:hover {
 .content-title p {
     width: 75%;
     float: left;
-    color: #642b18;
+    color: var(--cor-quaternaria);
     line-height: 1.5;
 }
 
@@ -1200,12 +1195,12 @@ form button:hover {
     padding: 10px 0 0 0;
     text-transform: uppercase;
     font-size: 15px;
-    color: #E53977;
+    color: var(--cor-secundaria);
 }
 
 .columns-serv p {
     padding: 10px 0;
-    color: #642b18;
+    color: var(--cor-quaternaria);
 }
 
 @media (max-width: 900px) {
@@ -1240,10 +1235,10 @@ form button:hover {
 }
 
 #breadcrumb {
-    background-color: #F6EAED;
+    background-color: var(--breadcrumb);
     padding: 20px 0;
     text-align: center;
-    color: #E53977;
+    color: var(--cor-secundaria);
     text-transform: uppercase;
 }
 
@@ -1257,20 +1252,20 @@ form button:hover {
 
 #breadcrumb a {
     display: inline-block;
-    color: #642b18;
+    color: var(--cor-quaternaria);
     font-size: 14px;
 }
 
 #conteudo-serviço h2 {
     text-align: center;
     padding: 15px;
-    color: #E53977;
+    color: var(--cor-secundaria);
 }
 
 #conteudo-serviço p {
     padding: 0 25px;
     text-align: center;
-    color: #642b18;
+    color: var(--cor-quaternaria);
     line-height: 1.4;
 }
 
