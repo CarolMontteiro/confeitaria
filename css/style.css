@@ -101,6 +101,7 @@ body {
     --background-image: linear-gradient(#f8f8f8, #FFC4D2);
     --background-btn: linear-gradient(#e53977, #99C8EF);
     --breadcrumb: #F6EAED;
+    --font-principal: 'Dancing Script';
 }
 
 #top {
@@ -112,7 +113,7 @@ body {
     float: left;
 }
 
-#logo-description {
+#logo-box {
     margin: 10% 0;
     float: left;
     width: 65%;
@@ -130,7 +131,7 @@ body {
 /*  CSS LOGO MENU  */
 .padrao-h1-logo-menu {
     font-size: 47px;
-    font-family: 'Dancing Script', cursive;
+    font-family: var(--font-principal);
     color: var(--cor-secundaria);
 }
 
@@ -139,13 +140,12 @@ body {
     font-size: 12px;
     color: var(--cor-quinario);
 }
-
 /* FINAL DO CSS LOGO MENU */
 
 /* CSS LOGO FOOTER  */
 .padrao-h1-logo-footer {
     font-size: 35px;
-    font-family: 'Dancing Script', cursive;
+    font-family: var(--font-principal);
     color: var(--cor-secundaria);
 }
 
@@ -154,7 +154,6 @@ body {
     font-size: 8px;
     color: var(--cor-quinario)
 }
-
 /*  FINAL DO CSS LOGO FOOTER  */
 
 #search-box { /*caixa de pesquisa*/
@@ -374,7 +373,7 @@ body {
 
 #fixed li:hover {
     background: var(--cor-secundaria);
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 #fixed a {
@@ -504,7 +503,7 @@ body {
     text-align: center;
     color: var(--cor-secundaria);
     font-weight: bold;
-    font-family: 'Dancing Script', cursive;
+    font-family: var(--font-principal);
     font-size: 40px;
 }
 
@@ -545,7 +544,7 @@ body {
 
 #kit-festa .card h3 {
     margin-top: 4px;
-    font-family: 'Dancing Script', cursive;
+    font-family: var(--font-principal);
     color: var(--cor-secundaria);
     font-weight: bold;
     font-size: 25px;
@@ -610,7 +609,7 @@ body {
 
 .info-email h1 {
     margin: 10px;
-    font-family: 'Dancing Script', cursive;
+    font-family: var(--font-principal);
     font-size: 45px;
     font-weight: bold;
     color: var(--cor-secundaria);
@@ -910,7 +909,7 @@ form button:hover {
 
 .titulo-contato h2 {
     color: var(--cor-secundaria);
-    font-family: 'Dancing Script', cursive;
+    font-family: var(--font-principal);
     font-size: 55px;
     font-weight: bold;
 }
@@ -971,7 +970,7 @@ form button:hover {
 #form-contato form label {
     margin-bottom: 5px;
     font-size: 18px;
-    color: var(--breadcrumb);
+    color: var(--cor-quinario);
 }
 
 #form-contato form input {
@@ -1081,7 +1080,7 @@ form button:hover {
 
 #title-service h2 {
     color: var(--cor-secundaria);
-    font-family: 'Dancing Script', cursive;
+    font-family: var(--font-principal);
     font-size: 60px;
     font-weight: bold;
 }
