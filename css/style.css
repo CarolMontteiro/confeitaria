@@ -102,6 +102,7 @@ body {
     --background-btn: linear-gradient(#e53977, #99C8EF);
     --breadcrumb: #F6EAED;
     --font-principal: 'Dancing Script';
+    --cor-font-titulo: #e53977;
 }
 
 #top {
@@ -132,7 +133,7 @@ body {
 .padrao-h1-logo-menu {
     font-size: 47px;
     font-family: var(--font-principal);
-    color: var(--cor-secundaria);
+    color: var(--cor-font-titulo);
 }
 
 .padrao-p-logo-menu {
@@ -146,7 +147,7 @@ body {
 .padrao-h1-logo-footer {
     font-size: 35px;
     font-family: var(--font-principal);
-    color: var(--cor-secundaria);
+    color: var(--cor-font-titulo);
 }
 
 .padrao-p-logo-footer {
@@ -501,7 +502,7 @@ body {
 
 #kit-festa .apresent h2 {
     text-align: center;
-    color: var(--cor-secundaria);
+    color: var(--cor-font-titulo);
     font-weight: bold;
     font-family: var(--font-principal);
     font-size: 40px;
@@ -545,7 +546,7 @@ body {
 #kit-festa .card h3 {
     margin-top: 4px;
     font-family: var(--font-principal);
-    color: var(--cor-secundaria);
+    color: var(--cor-font-titulo);
     font-weight: bold;
     font-size: 25px;
 }
@@ -612,7 +613,7 @@ body {
     font-family: var(--font-principal);
     font-size: 45px;
     font-weight: bold;
-    color: var(--cor-secundaria);
+    color: var(--cor-font-titulo);
     text-align: center;
 }
 
@@ -908,7 +909,7 @@ form button:hover {
 }
 
 .titulo-contato h2 {
-    color: var(--cor-secundaria);
+    color: var(--cor-font-titulo);
     font-family: var(--font-principal);
     font-size: 55px;
     font-weight: bold;
@@ -1079,7 +1080,7 @@ form button:hover {
 }
 
 #title-service h2 {
-    color: var(--cor-secundaria);
+    color: var(--cor-font-titulo);
     font-family: var(--font-principal);
     font-size: 60px;
     font-weight: bold;
@@ -1163,7 +1164,7 @@ form button:hover {
 .content-title h3 {
     width: 25%;
     float: left;
-    color: var(--cor-secundaria);
+    color: var(--cor-font-titulo);
     text-transform: uppercase;
     padding: 0 15px 0 0;
     text-align: center;
@@ -1194,7 +1195,7 @@ form button:hover {
     padding: 10px 0 0 0;
     text-transform: uppercase;
     font-size: 15px;
-    color: var(--cor-secundaria);
+    color: var(--cor-font-titulo);
 }
 
 .columns-serv p {
@@ -1258,7 +1259,7 @@ form button:hover {
 #conteudo-serviço h2 {
     text-align: center;
     padding: 15px;
-    color: var(--cor-secundaria);
+    color: var(--cor-font-titulo);
 }
 
 #conteudo-serviço p {
