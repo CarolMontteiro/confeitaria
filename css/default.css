@@ -1,0 +1,106 @@
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+
+section, header, footer {
+    width: 100%;
+    float: left;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    list-style-type: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1160px;
+}
+
+.container:before,
+.container:after {
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+
+.container:after {
+    clear: both;
+}
+
+.container {
+    zoom: 1;
+}
+
+/*  INÍCIO DO TOPO  */
+:root {
+    --cor-primaria: #FFC4D2;
+    --cor-secundaria: #e53977;
+    --cor-terciaria: #FFFFFF;
+    --cor-quaternaria: #642b18;
+    --cor-quinario: rgb(72, 70, 70);
+    --background-image: linear-gradient(#f8f8f8, #FFC4D2);
+    --background-btn: linear-gradient(#e53977, #99C8EF);
+    --breadcrumb: #F6EAED;
+    --font-principal: 'Dancing Script';
+    --cor-font-titulo: #e53977;
+}
