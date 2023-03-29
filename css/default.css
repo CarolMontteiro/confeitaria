@@ -103,4 +103,7 @@ body {
     --breadcrumb: #F6EAED;
     --font-principal: 'Dancing Script';
     --cor-font-titulo: #e53977;
+    --cor-webkit-box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
+    box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
 }

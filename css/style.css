@@ -4,13 +4,6 @@
 
 #logo-container {
     width: 33.3%;
-    float: left;
-}
-
-#logo-box {
-    margin: 10% 0;
-    float: left;
-    width: 65%;
 }
 
 #logo-img {
@@ -22,33 +15,24 @@
     width: 100%;
 }
 
-/*  CSS LOGO MENU  */
-.padrao-h1-logo-menu {
+#logo-box {
+    margin: 10% 0;
+    float: left;
+    width: 65%;
+}
+
+/*  CSS LOGO */
+.padrao-logo-h1 {
     font-size: 47px;
     font-family: var(--font-principal);
     color: var(--cor-font-titulo);
 }
 
-.padrao-p-logo-menu {
+.padrao-logo-p {
     text-transform: uppercase;
     font-size: 12px;
     color: var(--cor-quinario);
 }
-/* FINAL DO CSS LOGO MENU */
-
-/* CSS LOGO FOOTER  */
-.padrao-h1-logo-footer {
-    font-size: 35px;
-    font-family: var(--font-principal);
-    color: var(--cor-font-titulo);
-}
-
-.padrao-p-logo-footer {
-    text-transform: uppercase;
-    font-size: 8px;
-    color: var(--cor-quinario)
-}
-/*  FINAL DO CSS LOGO FOOTER  */
 
 #search-box { /*caixa de pesquisa*/
     width: 33.3%;
@@ -64,16 +48,14 @@
     background: var(--cor-terciaria);
     border-radius: 30px;
     align-items: center;
-    -webkit-box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
-    -moz-box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
-    box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
+    box-shadow: var(--cor-webkit-box-shadow);
 }
 
 #search-text {
     border: none;
     background: none;
     outline: none;
-    padding: 0;
+    /*padding: 10px;*/
     color: var(--cor-quinario);
     font-size: 16px;
     line-height: 30px;
@@ -95,7 +77,7 @@
 #contato-btn { /*botões links*/
     width: 33.3%;
     margin-top: 38px;
-    float: left;
+    /*float: left;*/
     justify-content: flex-end;
     height: 45px;
     border-radius: 40px;
@@ -111,9 +93,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
-    -moz-box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
-    box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
+    box-shadow: var(--cor-webkit-box-shadow);
 }
 
 .btn-1:hover, .btn-2:hover {
@@ -142,9 +122,7 @@
     font-weight: bold;
     padding: 15px;
     border-radius: 10px;
-    -webkit-box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
-    -moz-box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
-    box-shadow: 10px 10px 30px -6px rgba(0, 0, 0, 0.39);
+    box-shadow: var(--cor-webkit-box-shadow);
 }
 
 #login:hover a {
@@ -153,7 +131,7 @@
     transition: 0.4s;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     #top .container {
         position: relative;
     }
@@ -178,26 +156,21 @@
     }
 
     #login {
-        position: absolute;
+        /*position: absolute;*/
         right: 5%;
         top: 23%;
     }
 
-    #contato-btn { /*botões links*/
+    #contato-btn {
         width: 100%;
         float: inherit;
         justify-content: center;
         height: 90px;
     }
 
-    #search-box { /*caixa de pesquisa*/
+    #search-box {
         width: 50%;
         margin: 30px 25% 0 25%;
-    }
-
-    #search-text {
-        font-size: 15px;
-        line-height: 25px;
     }
 }
 
@@ -210,16 +183,16 @@
         font-size: 38px;
     }
 
-    #login {
-        position: absolute;
-        right: 3%;
-    }
+    /*#login {*/
+    /*    !*position: absolute;*!*/
+    /*    !*right: 3%;*!*/
+    /*}*/
 
-    #login a {
-        font-weight: 200;
-        padding: 8px;
-        border-radius: 7px;
-    }
+    /*#login a {*/
+    /*    font-weight: 200;*/
+    /*    padding: 8px;*/
+    /*    border-radius: 7px;*/
+    /*}*/
 
     #search-box { /*caixa de pesquisa*/
         height: 43px;
@@ -415,7 +388,7 @@
     float: left;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: var(--cor-webkit-box-shadow);
 }
 
 #kit-festa .card:last-child {
@@ -789,9 +762,7 @@ form button:hover {
     text-align: center;
     padding: 10px 0;
     margin-top: 50px;
-    -webkit-box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.55);
-    -moz-box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.55);
-    box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.55);
+    box-shadow: var(--cor-webkit-box-shadow);
 }
 
 .titulo-contato { /*#### PÁGINA CONTATO #####*/
@@ -990,7 +961,7 @@ form button:hover {
 }
 
 .list-box-service:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: var(--cor-webkit-box-shadow);
 }
 
 .list-box-service a {
@@ -1081,7 +1052,7 @@ form button:hover {
 }
 
 .columns-serv img:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: var(--cor-webkit-box-shadow);
 }
 
 .columns-serv h3 {
