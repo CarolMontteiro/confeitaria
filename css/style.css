@@ -2,12 +2,31 @@
     background-image: var(--background-image);
 }
 
+#breadcrumb {
+    background-color: rgba(93, 28, 13, 0.85);
+    padding: 15px 0;
+    text-align: center;
+}
+
+#breadcrumb li {
+   display: inline-block;
+}
+
+#breadcrumb a {
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+#breadcrumb i {
+    margin: 0 3px;
+}
+
 #logo-container {
     width: 33.3%;
 }
 
 #logo-img {
-    width: 130px;
+    width: 125px;
     float: left;
 }
 
@@ -1096,28 +1115,6 @@ form button:hover {
     .columns-serv {
         padding: 10px;
     }
-}
-
-#breadcrumb {
-    background-color: var(--breadcrumb);
-    padding: 20px 0;
-    text-align: center;
-    color: var(--cor-secundaria);
-    text-transform: uppercase;
-}
-
-#breadcrumb ul {
-    display: inline;
-}
-
-#breadcrumb li {
-    display: inline;
-}
-
-#breadcrumb a {
-    display: inline-block;
-    color: var(--cor-quaternaria);
-    font-size: 14px;
 }
 
 #conteudo-serviço h2 {
