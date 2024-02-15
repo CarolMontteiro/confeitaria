@@ -25,21 +25,6 @@
     width: 33.3%;
 }
 
-#logo-img {
-    width: 125px;
-    float: left;
-}
-
-#logo-img img {
-    width: 100%;
-}
-
-#logo-box {
-    margin: 10% 0;
-    float: left;
-    width: 65%;
-}
-
 /*  CSS LOGO */
 .padrao-logo-h1 {
     font-size: 47px;
@@ -53,20 +38,18 @@
     color: var(--cor-quinario);
 }
 
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 #search-box { /*caixa de pesquisa*/
     width: 33.3%;
     position: relative;
-    float: left;
-    margin-top: 41px;
-}
-
-#search-box #search-text {
-    width: 100%;
-    height: 40px;
-    padding: 0 5px;
+    padding: 10px 0 10px 10px;
     background: var(--cor-terciaria);
     border-radius: 30px;
-    align-items: center;
     box-shadow: var(--cor-webkit-box-shadow);
 }
 
@@ -74,16 +57,14 @@
     border: none;
     background: none;
     outline: none;
-    /*padding: 10px;*/
     color: var(--cor-quinario);
     font-size: 16px;
-    line-height: 30px;
 }
 
 #search-box a {
     position: absolute;
     right: 5px;
-    top: 4px;
+    top: 3px;
 }
 
 #search-btn i { /*icone lupa*/
@@ -94,11 +75,6 @@
 }
 
 #contato-btn { /*botões links*/
-    width: 33.3%;
-    margin-top: 38px;
-    /*float: left;*/
-    justify-content: flex-end;
-    height: 45px;
     border-radius: 40px;
     display: flex;
     align-items: center;
@@ -132,7 +108,6 @@
     justify-content: center;
     align-items: center;
     color: var(--cor-secundaria);
-    font-weight: 600;
 }
 
 #login a { /*botão login*/
@@ -150,94 +125,60 @@
     transition: 0.4s;
 }
 
-@media (max-width: 1000px) {
-    #top .container {
+@media (max-width: 768px) {
+    #top {
+        background: #f8d9df;
+    }
+
+    .header img {
+        width: 200px;
+    }
+
+    .btn-1, .btn-2 {
+        width: 40px;
+        height: 40px;
+    }
+
+    #contato-btn i {
+        width: 30px;
+        height: 30px;
+    }
+
+    #contato-btn span {
+        margin: 0 15px 0 0;
+    }
+
+    #login a { /*botão login*/
+        padding: 10px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 640px) {
+    #top .header {
+        display: block;
         position: relative;
     }
 
-    #logo-container {
-        width: 100%;
-        padding-top: 20px;
-    }
-
-    #logo-box {
-        margin: 24px 0 0 0;
-        width: 55%;
-    }
-
-    #logo-img {
-        width: 45%;
-        text-align: right;
-    }
-
-    #logo-img img {
-        width: 100px;
-    }
-
-    #login {
-        /*position: absolute;*/
-        right: 5%;
-        top: 23%;
+    #search-box {
+        margin: 15px auto;
+        width: 50%;
     }
 
     #contato-btn {
-        width: 100%;
-        float: inherit;
         justify-content: center;
-        height: 90px;
+        margin: 15px 0;
+        position: absolute;
+        top: 0;
+        right: 15px;
     }
 
-    #search-box {
-        width: 50%;
-        margin: 30px 25% 0 25%;
+    #contato-btn span {
+        margin: 0 9px 0 0;
     }
+
 }
 
-@media (max-width: 486px) {
-    #logo-img img {
-        width: 80px;
-    }
-
-    .padrao-h1-logo-menu {
-        font-size: 38px;
-    }
-
-    /*#login {*/
-    /*    !*position: absolute;*!*/
-    /*    !*right: 3%;*!*/
-    /*}*/
-
-    /*#login a {*/
-    /*    font-weight: 200;*/
-    /*    padding: 8px;*/
-    /*    border-radius: 7px;*/
-    /*}*/
-
-    #search-box { /*caixa de pesquisa*/
-        height: 43px;
-        padding: 5px;
-    }
-
-    #search-text {
-        font-size: 15px;
-        line-height: 25px;
-    }
-
-    #search-box a {
-        right: 10px;
-        top: 9px;
-    }
-}
-
-@media (max-width: 414px) {
-    #logo-img img {
-        width: 72px;
-    }
-
-    .padrao-h1-logo-menu {
-        font-size: 33px;
-    }
-}
 /*  FINAL DO TOP  */
 
 /*  MENU LISTA  */
