@@ -9,14 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/navik-horizontal-default-menu.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
     <script src="https://kit.fontawesome.com/8005c041ac.js" crossorigin="anonymous"></script>
+    <script src="js/btn-mobile.js"></script>
 
 </head>
 <body>
 <header id="top">
     <div class="container">
         <div class="header">
-            <img src="img/logoconfeitaria.png" alt="logomarca">
+            <div class="logo">
+                <a href="#"><img src="image/logoconfeitaria.png" alt="logomarca"></a>
+            </div>
 
             <div id="search-box">
                 <input type="text" id="search-text" placeholder="Buscar...">
@@ -37,39 +43,52 @@
                          <i class="fa-regular fa-envelope"></i>
                     </a>
                 </span>
-
-                <div id="login">
-                    <a href="#">Entrar</a>
-                </div>
             </div>
         </div>
     </div>
 
-    <nav id="menu-item">
+    <nav id="nav">
         <div class="container">
-            <ul id="fixed">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Delivery</a></li>
-                <li><a href="servico.html">Serviços</a></li>
-                <li><a href="#">Corporativos</a></li>
-                <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+            <div class="nav-bar">
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="login">
+                    <a href="#">Entrar</a>
+                </div>
+
+                <div class="btn-mobile">
+                    <button>menu</button>
+                </div>
+            </div>
         </div>
     </nav>
 </header>
 
 <main>
-    <section id="slides">
-        <img src="img/foto1%20(1).jpg" alt="brownie">
+    <section id="slides" class="">
+        <div class=" single-item">
+            <img src="image/foto1.jpg" alt="">
+            <img src="image/foto2.jpg" alt="">
+            <img src="image/foto3.jpg" alt="">
+            <img src="image/foto4.jpg" alt="">
+            <img src="image/foto5.jpg" alt="">
+            <img src="image/foto6.jpg" alt="">
+        </div>
     </section>
 
     <section id="info-compra">
         <div class="container">
             <div class="info-compra-box1">
                 <div class="img-info">
-                    <img src="img/desconto.png" alt="ilustração de desconto">
+                    <img src="image/desconto.png" alt="ilustração de desconto">
                 </div>
 
                 <h3>5% de Desconto</h3>
@@ -78,7 +97,7 @@
 
             <div class="info-compra-box">
                 <div class="img-info">
-                    <img src="img/entrega-rapida.png" alt="ilustração de frete">
+                    <img src="image/entrega-rapida.png" alt="ilustração de frete">
                 </div>
 
                 <h3>Frete Grátis</h3>
@@ -87,7 +106,7 @@
 
             <div class="info-compra-box">
                 <div class="img-info">
-                    <img style="margin-top: -3px" src="img/cartao.png" alt="ilustração de parcela">
+                    <img style="margin-top: -3px" src="image/cartao.png" alt="ilustração de parcela">
                 </div>
 
                 <h3>Parcele até 3x sem Juros</h3>
@@ -112,7 +131,7 @@
             <div class="card">
                 <a href="conteudo-cards-kit.html">
                     <div class="card-img">
-                        <img src="img/kit-presente.jpeg" alt="ilustração de kit presente">
+                        <img src="image/kit-presente.jpeg" alt="ilustração de kit presente">
                     </div>
 
                     <h3>Kit Presente</h3>
@@ -124,7 +143,7 @@
             <div class="card">
                 <a href="conteudo-cards-kit.html">
                     <div class="card-img">
-                        <img src="img/kitfesta.jpeg" alt="ilustração de kit festa">
+                        <img src="image/kitfesta.jpeg" alt="ilustração de kit festa">
                     </div>
 
                     <h3>Kit Festa</h3>
@@ -136,7 +155,7 @@
             <div class="card">
                 <a href="conteudo-cards-kit.html">
                     <div class="card-img">
-                        <img src="img/brindes%20(1).jpeg" alt="ilustração de brindes comertíveis">
+                        <img src="image/brindes%20(1).jpeg" alt="ilustração de brindes comertíveis">
                     </div>
 
                     <h3>Brindes Comertíveis</h3>
@@ -157,12 +176,6 @@
         </div>
     </section>
 
-    <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5858297401187!2d-48.47496038567407!3d-1.4241772989613166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48bfb722042ef%3A0xce82bc8e292cbd6!2sTv.%20Angustura%2C%201356%20-%20Pedreira%2C%20Bel%C3%A9m%20-%20PA%2C%2066080-180!5e0!3m2!1spt-BR!2sbr!4v1666714736186!5m2!1spt-BR!2sbr"
-                style="border:0; width: 100%; height: 450px;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
 </main>
 
 <footer id="footer">
@@ -170,7 +183,7 @@
         <div id="box-footer-logo">
             <div class="box-footer-content">
                 <div class="box-footer-img">
-                    <img src="img/logomarca.png" alt="logo">
+                    <img src="image/logomarca.png" alt="logo">
                 </div>
 
                 <div class="box-footer-logo-title">
@@ -191,7 +204,7 @@
 
         <div id="box-card">
             <h3>formas de pagamentos</h3>
-            <img src="img/formas-de-pagamento-logos-cópia.png" alt="formas de pagamento">
+            <img src="image/formas-de-pagamento-logos-cópia.png" alt="formas de pagamento">
         </div>
 
         <div id="box-icons">
@@ -208,5 +221,11 @@
         <p>Site desenvolvido por Carol Monteiro</p>
     </div>
 </footer>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
+
+<script src="js/carousel.js"></script>
 </body>
 </html>
