@@ -15,6 +15,7 @@ time, mark, audio, video {
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
+    text-decoration: none;
 }
 
 
@@ -31,6 +32,15 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
+}
+
+body a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
 }
 
 ol, ul {
