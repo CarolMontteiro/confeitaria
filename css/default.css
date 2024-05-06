@@ -103,7 +103,7 @@ body {
 
 /*  INÍCIO DO TOPO  */
 :root {
-    --cor-primaria: #FFC4D2;
+    --cor-primaria: rgba(248, 221, 227, 0.99);
     --cor-secundaria: #e53977;
     --cor-terciaria: #FFFFFF;
     --cor-quaternaria: #642b18;

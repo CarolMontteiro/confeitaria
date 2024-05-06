@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/default.css">
-    <link rel="stylesheet" type="text/css" href="css/navik-horizontal-default-menu.min.css"/>
+    <link rel="stylesheet" href="./css/slick/slick.css">
+    <link rel="stylesheet" href="./css/slick/slick-theme.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/8005c041ac.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header id="top">
@@ -66,10 +66,6 @@
                             <a class="nav-link px-lg-5" aria-current="page" href="#">Home</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link px-lg-5" href="#">Delivery</a>
-                        </li>
-
                         <li class="nav-item dropdown">
                             <a class="nav-link px-lg-5 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Serviços
@@ -83,6 +79,10 @@
                         </li>
 
                         <li class="nav-item">
+                            <a class="nav-link px-lg-5" href="#">Delivery</a>
+                        </li>
+
+                        <li class="nav-item">
                             <a class="nav-link px-lg-5" href="#">Sobre nós</a>
                         </li>
 
@@ -90,23 +90,24 @@
                             <a class="nav-link px-lg-5" aria-disabled="true">contato</a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </div>
     </nav>
+</header>
 
+<main>
     <section id="info-compra">
         <div class="container">
             <div class="container-fluid">
                 <div class="row">
                     <div class="info-compra-box col-md-4">
-                        <div class="row">
-                            <div class="img-info col-3 col-md-5 col-lg-4 col-xl-3">
-                                <img src="image/desconto.png" alt="ilustração de desconto">
+                        <div class="row row-cols-2 row-cols-md-1">
+                            <div class="img-info col-3 col-sm-2 col-md-5 col-lg-4 col-xl-3">
+                                <img src="image/promocao.png" alt="ilustração de desconto">
                             </div>
 
-                            <div class="text-info col-xl-9">
+                            <div class="text-info col-9 col-xl-9">
                                 <h3>5% de Desconto</h3>
                                 <p>No boleto ou pix</p>
                             </div>
@@ -114,12 +115,12 @@
                     </div>
 
                     <div class="info-compra-box col-md-4">
-                        <div class="row">
-                            <div class="img-info col-3 col-md-5 col-lg-4 col-xl-3">
-                                <img src="image/entrega-rapida.png" alt="ilustração de frete">
+                        <div class="row row-cols-2 row-cols-md-1">
+                            <div class="img-info col-3 col-sm-2 col-md-5 col-lg-4 col-xl-3">
+                                <img src="image/entrega.png" alt="ilustração de frete">
                             </div>
 
-                            <div class="text-info col-xl-9">
+                            <div class="text-info col-9 col-xl-9">
                                 <h3>Frete Grátis</h3>
                                 <p>Em compras acima de $200</p>
                             </div>
@@ -127,12 +128,12 @@
                     </div>
 
                     <div class="info-compra-box col-md-4">
-                        <div class="row">
-                            <div class="img-info col-3 col-md-5 col-lg-4 col-xl-3">
+                        <div class="row row-cols-2 row-cols-md-1">
+                            <div class="img-info col-3 col-sm-2 col-md-5 col-lg-4 col-xl-3">
                                 <img style="margin-top: -3px" src="image/cartao.png" alt="ilustração de parcela">
                             </div>
 
-                            <div class="text-info col-xl-9">
+                            <div class="text-info col-9 col-xl-9">
                                 <h3>Até 3x sem Juros</h3>
                                 <p>Parcela mínima de R$ 20</p>
                             </div>
@@ -157,40 +158,39 @@
                 </p>
             </div>
 
-            <div class="card">
-                <a href="conteudo-cards-kit.html">
-                    <div class="card-img">
-                        <img src="image/kit-presente.jpeg" alt="ilustração de kit presente">
-                    </div>
+            <div class="d-md-flex justify-content-lg-center align-items-lg-center gap-md-4 gap-lg-5 pb-5">
+                <div class="card">
+                    <a href="conteudo-cards-kit.html">
+                        <div class="card-img">
+                            <img src="image/kit-presente.jpeg" alt="ilustração de kit presente">
+                        </div>
 
-                    <h3>Kit Presente</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem debitis deserunt illo.</p>
-                    <span>ver mais</span>
-                </a>
-            </div>
+                        <h3>Kit Presente</h3>
+                        <span>ver mais</span>
+                    </a>
+                </div>
 
-            <div class="card">
-                <a href="conteudo-cards-kit.html">
-                    <div class="card-img">
-                        <img src="image/kitfesta.jpeg" alt="ilustração de kit festa">
-                    </div>
+                <div class="card">
+                    <a href="conteudo-cards-kit.html">
+                        <div class="card-img">
+                            <img src="image/kitfesta.jpeg" alt="ilustração de kit festa">
+                        </div>
 
-                    <h3>Kit Festa</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem debitis deserunt illo.</p>
-                    <span>ver mais</span>
-                </a>
-            </div>
+                        <h3>Kit Festa</h3>
+                        <span>ver mais</span>
+                    </a>
+                </div>
 
-            <div class="card">
-                <a href="conteudo-cards-kit.html">
-                    <div class="card-img">
-                        <img src="image/brindes%20(1).jpeg" alt="ilustração de brindes comertíveis">
-                    </div>
+                <div class="card">
+                    <a href="conteudo-cards-kit.html">
+                        <div class="card-img">
+                            <img src="image/brindes%20(1).jpeg" alt="ilustração de brindes comertíveis">
+                        </div>
 
-                    <h3>Brindes Comertíveis</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem debitis deserunt illo.</p>
-                    <span>ver mais</span>
-                </a>
+                        <h3>Brindes Comertíveis</h3>
+                        <span>ver mais</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -204,7 +204,6 @@
             </form>
         </div>
     </section>
-
 </main>
 
 <footer id="footer">
@@ -251,12 +250,9 @@
     </div>
 </footer>
 
-<!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
-<!--<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
-<!--<script type="text/javascript" src="js/slick/slick.min.js"></script>-->
-
-<!--<script src="js/carousel.js"></script>-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="js/slick/slick.min.js"></script>
+<script src="js/fontawesome.js"></script>
 </body>
 </html>

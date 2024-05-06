@@ -26,11 +26,17 @@
 }
 
 .logo {
+    width: 250px;
+    height: auto;
     padding: 10px 0;
 }
 
+.logo img {
+    width: 100%;
+}
+
 .search-box { /*caixa de pesquisa*/
-    width: 30%;
+    width: 50%;
     position: relative;
     padding: 10px ;
     border-radius: 30px;
@@ -133,6 +139,7 @@
 
 @media (max-width: 640px) {
     .search-box-mobile {
+        margin-top: 10px;
         width: auto;
     }
 
@@ -142,6 +149,14 @@
 }
 
 @media (max-width: 575px) {
+    .logo {
+        width: 250px;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
     .search-box-mobile {
         padding: 9px ;
     }
@@ -159,7 +174,6 @@
 /*############################################################################################*/
 /*################################      MENU LIST      #######################################*/
 /*############################################################################################*/
-
 .nav {
     border-top: 2px dashed #ce698f;
     border-bottom: 2px dashed #ce698f;
@@ -168,7 +182,7 @@
 
 .navbar-nav li a {
     color: var(--cor-quaternaria);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .navbar-nav li a:hover {
@@ -193,13 +207,14 @@
 /*###################################         INFO-COMPRA         ############################*/
 /*############################################################################################*/
 #info-compra {
-    background: var(--cor-primaria);
     padding: 20px 0;
 }
 
 .img-info {
     width: 80px;
     height: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .img-info img {
@@ -213,20 +228,20 @@
 }
 
 .text-info h3 {
-    font-size: 25px;
-    color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    font-size: 22px;
     margin: 0;
 }
 
 .text-info p {
-    font-size: 18px;
     color: var(--cor-quaternaria);
+    font-size: 16px;
     margin: 0;
 }
 
 @media (max-width: 1199px ) {
     #info-compra {
-        padding: 10px 0;
+        padding: 35px 0;
     }
 
     .img-info {
@@ -238,7 +253,7 @@
     }
 
     .text-info h3 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .text-info p {
@@ -257,106 +272,86 @@
 }
 
 @media (max-width: 767px) {
-    .img-info {
-        margin: 0;
+    #info-compra {
+        padding: 15px 0;
     }
 
     .img-info {
-        height: 100px;
+        margin: 0;
     }
 
     .info-compra-box {
         text-align: start;
     }
+}
 
-    .text-info {
-        margin-left: 8px;
+@media (max-width: 575px) {
+    .info-compra-box {
+        padding: 10px;
     }
 }
 
-@media (max-width: 563px) {
-    .img-info {
-        height: 120px;
-    }
-}
+/*############################################################################################*/
+/*############################################################################################*/
+/*############################################################################################*/
 
-@media (max-width: 441px) {
-    .img-info {
-        height: 80px;
-    }
-}
-
-@media (max-width: 381px) {
-    .img-info {
-        height: 70px;
-    }
-}
-
-#kit-festa .apresent {
+.apresent {
     padding: 20px;
 }
 
-#kit-festa .apresent h2 {
-    text-align: center;
+.apresent h2 {
     color: var(--cor-font-titulo);
-    font-weight: bold;
     font-family: var(--font-principal);
+    font-weight: bold;
     font-size: 40px;
+    text-align: center;
 }
 
-#kit-festa .apresent p {
-    margin: 10px 20%;
+.apresent p {
+    width: 70%;
+    padding-bottom: 20px;
+    margin: 0 auto;
     text-align: center;
     color: var(--cor-quaternaria);
     line-height: 1.3;
 }
 
 #kit-festa .card {
-    width: 31.3%;
-    border: solid 20px var(--cor-terciaria);
-    margin: 0 3% 30px 0;
-    float: left;
+    width: 26%;
+    border: solid 15px var(--cor-terciaria);
     text-align: center;
     transition: 0.3s;
     box-shadow: var(--cor-webkit-box-shadow);
-}
-
-#kit-festa .card:last-child {
-    margin-right: 0;
 }
 
 #kit-festa .card:hover {
     transform: scale(1.1);
 }
 
+#kit-festa .card-img {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
 #kit-festa .card img {
     width: 100%;
 }
 
-#kit-festa .card-img {
-    overflow: hidden;
-    width: 100%;
-    height: 364px;
-}
-
 #kit-festa .card h3 {
-    margin-top: 4px;
     font-family: var(--font-principal);
     color: var(--cor-font-titulo);
     font-weight: bold;
     font-size: 25px;
-}
-
-#kit-festa .card p {
-    color: var(--cor-quaternaria);
-    margin: 10px 0;
+    padding-top: 8px;
 }
 
 #kit-festa .card span {
     display: block;
-    padding: 6px 0;
+    padding: 3px 0;
     color: var(--cor-quaternaria);
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 #kit-festa .card:hover span {
@@ -364,35 +359,50 @@
     color: var(--cor-terciaria);
 }
 
-@media (max-width: 1158px) {
-    #kit-festa .card-img {
-        overflow: inherit;
-        height: inherit;
+/*.card.responsive-card-kit {*/
+/*    display: none;*/
+/*}*/
+
+@media (max-width: 992px) {
+    #kit-festa .card {
+        width: 31%;
+        border: solid 10px var(--cor-terciaria);
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: var(--cor-webkit-box-shadow);
     }
 }
 
-@media (max-width: 835px) {
+@media (max-width: 768px) {
+    /*.card.responsive-card-kit {*/
+    /*    display: block;*/
+    /*}*/
+
     #kit-festa .card {
-        border: solid 12px var(--cor-terciaria);
+        width: 50%;
+        border: solid 10px var(--cor-terciaria);
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: var(--cor-webkit-box-shadow);
     }
 }
 
 @media (max-width: 700px) {
-    #kit-festa .card {
-        width: 50%;
-        margin: 0 25% 30px 25%;
-    }
+    /*#kit-festa .card {*/
+    /*    width: 50%;*/
+    /*    margin: 0 25% 30px 25%;*/
+    /*}*/
 }
 
 @media (max-width: 500px) {
-    #kit-festa .apresent p {
-        margin: 15px 0;
-    }
+    /*#kit-festa .apresent p {*/
+    /*    margin: 15px 0;*/
+    /*}*/
 
-    #kit-festa .card {
-        width: 70%;
-        margin: 0 15% 30px 15%;
-    }
+    /*#kit-festa .card {*/
+    /*    width: 70%;*/
+    /*    margin: 0 15% 30px 15%;*/
+    /*}*/
 }
 
 #email-box {
