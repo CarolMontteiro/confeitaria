@@ -199,15 +199,25 @@
 /*############################################################################################*/
 /*###################################         BANNER          ################################*/
 /*############################################################################################*/
-/*#slides img {*/
-/*    width: 100%;*/
-/*}*/
+.banner {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 53%, rgba(255,196,210,1) 53%, rgba(255,196,210,1) 100%);
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 640px) {
+    .banner .container {
+        margin: 0;
+        padding: 0;
+    }
+}
 
 /*############################################################################################*/
 /*###################################         INFO-COMPRA         ############################*/
 /*############################################################################################*/
 #info-compra {
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 .img-info {
@@ -289,11 +299,17 @@
     .info-compra-box {
         padding: 10px;
     }
+
+    .img-info img {
+        max-height: 70px;
+        max-width: 70px;
+
+    }
 }
 
-/*############################################################################################*/
-/*############################################################################################*/
-/*############################################################################################*/
+/*###################################################################################################################*/
+/*################################          KIT-FESTA       ###########################################################*/
+/*#####################################################################################################################*/
 
 .apresent {
     padding: 20px;
@@ -359,10 +375,6 @@
     color: var(--cor-terciaria);
 }
 
-/*.card.responsive-card-kit {*/
-/*    display: none;*/
-/*}*/
-
 @media (max-width: 992px) {
     #kit-festa .card {
         width: 31%;
@@ -374,35 +386,25 @@
 }
 
 @media (max-width: 768px) {
-    /*.card.responsive-card-kit {*/
-    /*    display: block;*/
-    /*}*/
-
-    #kit-festa .card {
-        width: 50%;
-        border: solid 10px var(--cor-terciaria);
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: var(--cor-webkit-box-shadow);
+    .apresent h2 {
+        font-size: 35px;
+        line-height: 40px;
     }
-}
 
-@media (max-width: 700px) {
-    /*#kit-festa .card {*/
-    /*    width: 50%;*/
-    /*    margin: 0 25% 30px 25%;*/
-    /*}*/
-}
+    .apresent p {
+        width: 100%;
+        margin-top: 20px;
+        text-align: justify;
+    }
 
-@media (max-width: 500px) {
-    /*#kit-festa .apresent p {*/
-    /*    margin: 15px 0;*/
-    /*}*/
+    .carousel-response {
+        height: 350px;
+    }
 
-    /*#kit-festa .card {*/
-    /*    width: 70%;*/
-    /*    margin: 0 15% 30px 15%;*/
-    /*}*/
+    .carousel-response .card {
+        margin: 0 20px;
+        width: 25%;
+    }
 }
 
 #email-box {
@@ -454,7 +456,123 @@ form button:hover {
     font-weight: bold;
 }
 
-/*  INÍCIO DO FOOTER   */
+/*############################################################################################*/
+/*################################       OFERTA      #######################################*/
+/*############################################################################################*/
+.box-offer {
+    background-color: #99C8EF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer-content {
+    background-color: antiquewhite;
+    display: flex;
+}
+
+.offer-img {
+    width: 450px;
+    height: auto;
+}
+
+.offer-text {
+    width: 320px;
+}
+
+
+/*############################################################################################*/
+/*################################        CATEGORIA     #######################################*/
+/*############################################################################################*/
+
+.text-category {
+    padding: 35px 0;
+    text-align: center;
+}
+
+.text-category h1 {
+    font-family: var(--font-principal);
+    color: var(--cor-secundaria);
+    font-size: 40px;
+}
+
+.text-category p {
+    color: var(--cor-quaternaria);
+}
+
+.content-category {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.box-category {
+    width: 23%;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: var(--cor-webkit-box-shadow);
+    transition: 0.3s;
+}
+
+.box-category:hover {
+    transform: scale(1.1);
+}
+
+.box-category a {
+    padding: 15px;
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--cor-quaternaria);
+}
+
+.box-category a:hover {
+    color: var(--cor-secundaria);
+}
+
+.box-category img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.box-category p {
+    margin: 10px 0;
+}
+
+@media (max-width: 792px) {
+    #service .container {
+        padding: 20px 0;
+    }
+
+    .box-category {
+        width: 25%;
+    }
+}
+
+@media (max-width: 610px) {
+    .box-category {
+        width: 33.3%;
+    }
+}
+
+@media (max-width: 500px) {
+    .box-category {
+        width: 50%;
+    }
+}
+
+@media (max-width: 412px) {
+    .title-list-service h3 {
+        font-size: 5vw;
+    }
+}
+
+
+/*############################################################################################*/
+/*################################       FOOTER      #######################################*/
+/*############################################################################################*/
+
 #footer {
     margin-top: -4px;
 }
