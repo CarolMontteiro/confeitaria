@@ -224,8 +224,8 @@
 }
 
 .img-info {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
 }
@@ -306,13 +306,48 @@
     .img-info img {
         max-height: 70px;
         max-width: 70px;
-
     }
 }
+
+@media (max-width: 420px) {
+    .img-info {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/*############################################################################################*/
+/*################################        BOX PROUCT     #######################################*/
+/*############################################################################################*/
 
 /*###################################################################################################################*/
 /*################################          KIT-FESTA       ###########################################################*/
 /*#####################################################################################################################*/
+.topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topic h1 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #642b18;
+    margin: 7px 0;
+    text-transform: uppercase;
+}
+
+.border-before {
+    border: 1px solid #642b18;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.border-after {
+    border: 1px solid #642b18;
+    width: 60px;
+    margin-left: 10px;
+}
 
 .apresent {
     padding: 20px;
@@ -322,7 +357,7 @@
     color: var(--cor-font-titulo);
     font-family: var(--font-principal);
     font-weight: bold;
-    font-size: 40px;
+    font-size: 36px;
     text-align: center;
 }
 
@@ -473,93 +508,93 @@ form button:hover {
 }
 
 
-/*############################################################################################*/
-/*################################        CATEGORIA     #######################################*/
-/*############################################################################################*/
+/*!*############################################################################################*!*/
+/*!*################################        CATEGORIA     #######################################*!*/
+/*!*############################################################################################*!*/
 
-.text-category {
-    padding: 35px 0;
-    text-align: center;
-}
+/*.text-category {*/
+/*    padding: 35px 0;*/
+/*    text-align: center;*/
+/*}*/
 
-.text-category h1 {
-    font-family: var(--font-principal);
-    color: var(--cor-secundaria);
-    font-size: 40px;
-}
+/*.text-category h1 {*/
+/*    font-family: var(--font-principal);*/
+/*    color: var(--cor-secundaria);*/
+/*    font-size: 40px;*/
+/*}*/
 
-.text-category p {
-    color: var(--cor-quaternaria);
-}
+/*.text-category p {*/
+/*    color: var(--cor-quaternaria);*/
+/*}*/
 
-.content-category {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
+/*.content-category {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    margin-bottom: 30px;*/
+/*}*/
 
-.box-category {
-    width: 23%;
-    text-align: center;
-    background-color: #FFFFFF;
-    box-shadow: var(--cor-webkit-box-shadow);
-    transition: 0.3s;
-}
+/*.box-category {*/
+/*    width: 23%;*/
+/*    text-align: center;*/
+/*    background-color: #FFFFFF;*/
+/*    box-shadow: var(--cor-webkit-box-shadow);*/
+/*    transition: 0.3s;*/
+/*}*/
 
-.box-category:hover {
-    transform: scale(1.1);
-}
+/*.box-category:hover {*/
+/*    transform: scale(1.1);*/
+/*}*/
 
-.box-category a {
-    padding: 15px;
-    width: 100%;
-    display: block;
-    font-size: 15px;
-    text-transform: uppercase;
-    color: var(--cor-quaternaria);
-}
+/*.box-category a {*/
+/*    padding: 15px;*/
+/*    width: 100%;*/
+/*    display: block;*/
+/*    font-size: 15px;*/
+/*    text-transform: uppercase;*/
+/*    color: var(--cor-quaternaria);*/
+/*}*/
 
-.box-category a:hover {
-    color: var(--cor-secundaria);
-}
+/*.box-category a:hover {*/
+/*    color: var(--cor-secundaria);*/
+/*}*/
 
-.box-category img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-}
+/*.box-category img {*/
+/*    width: 250px;*/
+/*    height: 250px;*/
+/*    object-fit: cover;*/
+/*}*/
 
-.box-category p {
-    margin: 10px 0;
-}
+/*.box-category p {*/
+/*    margin: 10px 0;*/
+/*}*/
 
-@media (max-width: 792px) {
-    #service .container {
-        padding: 20px 0;
-    }
+/*@media (max-width: 792px) {*/
+/*    #service .container {*/
+/*        padding: 20px 0;*/
+/*    }*/
 
-    .box-category {
-        width: 25%;
-    }
-}
+/*    .box-category {*/
+/*        width: 25%;*/
+/*    }*/
+/*}*/
 
-@media (max-width: 610px) {
-    .box-category {
-        width: 33.3%;
-    }
-}
+/*@media (max-width: 610px) {*/
+/*    .box-category {*/
+/*        width: 33.3%;*/
+/*    }*/
+/*}*/
 
-@media (max-width: 500px) {
-    .box-category {
-        width: 50%;
-    }
-}
+/*@media (max-width: 500px) {*/
+/*    .box-category {*/
+/*        width: 50%;*/
+/*    }*/
+/*}*/
 
-@media (max-width: 412px) {
-    .title-list-service h3 {
-        font-size: 5vw;
-    }
-}
+/*@media (max-width: 412px) {*/
+/*    .title-list-service h3 {*/
+/*        font-size: 5vw;*/
+/*    }*/
+/*}*/
 
 
 /*############################################################################################*/
