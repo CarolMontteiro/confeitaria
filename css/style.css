@@ -353,13 +353,12 @@
     background-color: #73543E;
 }
 
-/*.content-category{*/
-/*    display: none;*/
-/*}*/
-
-/*.content-category.active {*/
-/*    display: block;*/
-/*}*/
+.content-category-inactive {
+    display: none;
+}
+.content-category-active {
+    display: block;
+}
 
 .box-category:hover {
     transform: scale(1.1);
@@ -539,6 +538,69 @@
 /*############################################################################################*/
 /*################################       EMAIL BOX     #######################################*/
 /*############################################################################################*/
+
+.promotion-content {
+    display: flex;
+    padding: 70px 0;
+    background-color: #73543E;
+}
+
+.promotion-card {
+    margin: 0 15px;
+    padding: 20px 10px;
+    background-color: white;
+    height: 192px;
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.promotion-text-section {
+    text-align: center;
+}
+
+.promotion-text-section  span{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.promotion-text-section h3 {
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.promotion-text-section, .promotion-image-section {
+    width: 100%; /* w-full para mobile */
+    padding: 16px; /* p-4 */
+}
+
+.promotion-food-image {
+    width: 16rem; /* w-64 */
+    margin: 0 auto; /* mx-auto */
+}
+
+
+@media (max-width: 768px) {
+    .promotion-card {
+        display: block;
+
+        /*flex-direction: column-reverse; !* flex-col-reverse para mobile *!*/
+
+    }
+
+    .promotion-text-section, .promotion-image-section {
+        /*width: 50%;*/
+        /*padding: 0;*/
+    }
+}
+
+
+
+
+
+
 
 #email-box {
     padding: 50px 0;

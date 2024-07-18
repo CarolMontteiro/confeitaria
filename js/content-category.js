@@ -32,3 +32,10 @@ $(".content-category").slick({
 });
 
 // ACTIVE LINK
+
+function btnService(category) {
+
+   const party = document.getElementById(category);
+   party.classList.remove('content-category-inactive');
+    // console.log(name);
+}
