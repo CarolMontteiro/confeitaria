@@ -4,19 +4,33 @@
 /*####################################################################################################################*/
 /*################################         "MIGALHA DE PÃO"       ####################################################*/
 /*####################################################################################################################*/
+
 #breadcrumb {
-    background-color: rgba(93, 28, 13, 0.85);
-    padding: 15px 0;
+    background-color: #F9D7E0;
+    margin-bottom: 25px;
+}
+
+#breadcrumb ul {
     text-align: center;
+    margin: -1px 0 0 0;
+    font-size: 13px;
+    color: #e53977 ;
+    font-weight: 600;
 }
 
 #breadcrumb li {
     display: inline-block;
+    padding: 25px 0;
 }
 
 #breadcrumb a {
     font-size: 13px;
-    color: #FFFFFF;
+    color: #74492b;
+    font-weight: 600;
+}
+
+#breadcrumb a:hover {
+    color: #e53977;
 }
 
 #breadcrumb i {
@@ -504,9 +518,9 @@
     padding: 70px 0;
 }
 
-.description-category {
+/* .description-category {
     margin-top: 20px;
-}
+} */
 
 .topic-service {
     display: flex;
@@ -516,7 +530,7 @@
 }
 
 .tab-btn {
-    display: block;
+    /* display: block; */
     margin: 0 10px;
     padding: 15px 20px;
     color: #642b18;
@@ -524,18 +538,24 @@
     border: none;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.51);
+    transition: background-color .3s ease;
 }
 
 .tab-btn.active {
     color: #FFFFFF;
-    background-color: #73543E;
+    background-color: #74492b;
 }
 
-.content-category-inactive {
+.tab-btn:hover {
+    color: #FFFFFF;
+    background-color: #c07e4f;
+}
+
+.contentCategory {
     display: none;
 }
 
-.content-category-active {
+.contentCategory.show {
     display: block;
 }
 
@@ -595,7 +615,7 @@
     }
 
     .tab-btn {
-        margin: 10px auto;
+        margin: 10px 15px;
         padding: 15px 20px;
         width: 90%;
     }
@@ -1058,32 +1078,40 @@
         font-size: 38px;
     }
 }
-
 /*  FIM DA PÁGINA CONTATO  */
 
+
 /* PÁGINA DE SERVIÇOS  */
+
 #title-service {
-    background: var(--cor-primaria);
     display: flex;
     justify-content: center;
-    padding: 55px;
+    padding-top: 25px;
 }
 
 #title-service h2 {
     color: var(--cor-font-titulo);
     font-family: var(--font-principal);
-    font-size: 60px;
+    font-size: 55px;
     font-weight: bold;
 }
 
 #service .container {
     padding: 60px 0;
+    
+}
+
+.box-servece {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 77px;
 }
 
 .list-box-service {
-    float: left;
     text-align: center;
     width: 20%;
+    background-color: #FFFFFF;
+
 }
 
 .list-box-service:hover {
@@ -1146,39 +1174,47 @@
 }
 
 #serv-content .container {
-    background-color: #F6EAED;
-    border: 1px solid #333232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
     padding: 20px;
 }
 
-.content-title h3 {
+
+.content-title {
     width: 25%;
-    float: left;
     color: var(--cor-font-titulo);
     text-transform: uppercase;
-    padding: 0 15px 0 0;
     text-align: center;
 }
 
-.content-title p {
+.content-title-p {
     width: 75%;
-    float: left;
     color: var(--cor-quaternaria);
     line-height: 1.5;
 }
 
+.box-wrapper-service {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #b8b4b4;
+}
+
 .columns-serv {
-    width: 25%;
-    float: left;
+    width: 22%;
     padding: 20px;
+}
+
+.columns-serv:hover {
+    box-shadow: var(--cor-webkit-box-shadow);
 }
 
 .columns-serv img {
     width: 100%;
-}
-
-.columns-serv img:hover {
-    box-shadow: var(--cor-webkit-box-shadow);
 }
 
 .columns-serv h3 {
@@ -1189,7 +1225,9 @@
 }
 
 .columns-serv p {
-    padding: 10px 0;
+    height: 100px;
+    margin: 0;
+    overflow: hidden;
     color: var(--cor-quaternaria);
 }
 
