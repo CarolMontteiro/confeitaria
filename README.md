@@ -1,4 +1,4 @@
-# 🍰 Vila Doce – Confeitaria
+# 🧁 Vila Doce – Confeitaria
 
 Projeto de site institucional para uma confeitaria fictícia, desenvolvido como meu **primeiro projeto concluído** após um período de estudos em **HTML, CSS e JavaScript**.
 
@@ -8,7 +8,7 @@ Este projeto tem um significado especial para mim, pois marcou a transição ent
 
 ## 📷 Preview
 
-![Página inicial - Desktop](home/pictures/screenshots/homeConfeitaria.png)
+![Página inicial - Desktop](Screenshots/homeConfeitaria.png)
 
 ---
 
