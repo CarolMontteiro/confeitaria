@@ -8,7 +8,7 @@ Este projeto tem um significado especial para mim, pois marcou a transição ent
 
 ## 📷 Preview
 
-![Página inicial - Desktop](Screenshots/homeConfeitaria.png)
+![Página inicial - Desktop](screenshots/homeConfeitaria.png)
 
 ---
 
