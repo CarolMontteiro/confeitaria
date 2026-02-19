@@ -7,6 +7,10 @@ Este projeto tem um significado especial para mim, pois marcou a transição ent
 ---
 
 ## 📷 Preview
+## 🌐 Acesse o projeto online
+
+🔗 [Clique aqui para visualizar o site](https://carolmontteiro.github.io/confeitaria)
+
 
 ![Página inicial - Desktop](screenshots/homeConfeitaria.png)
 
