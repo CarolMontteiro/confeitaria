@@ -14,7 +14,7 @@
 <body>
     <header id="top">
         <div class="container">
-            <div class="header d-flex justify-content-between align-items-center">
+            <div class="header d-flex justify-content-center justify-content-lg-between align-items-lg-center">
                 <div class="logo">
                     <a href="index.html"><img src="image/logoconfeitaria.png" alt="logomarca"></a>
                 </div>
@@ -24,20 +24,6 @@
                     <a href="#" class="search-btn">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
-                </div>
-    
-                <div class="contact-btn d-flex">
-                    <span class="btn-1 d-flex justify-content-center align-items-center">
-                        <a href="#">
-                            <i class="fa-brands fa-whatsapp d-flex justify-content-center align-items-center"></i>
-                        </a>
-                    </span>
-    
-                    <span class="btn-2 d-flex justify-content-center align-items-center">
-                         <a href="#">
-                             <i class="fa-regular fa-envelope d-flex justify-content-center align-items-center"></i>
-                        </a>
-                    </span>
                 </div>
             </div>
         </div>
@@ -100,13 +86,21 @@
     </header>
 
     <section id="breadcrumb">
-        <ul>
+        <ul class="text-center fw-semibold">
             <li><a href="index.html">HOME <i class="fa-solid fa-arrow-right"></i></a></li>
             <li><a href="#"> CONTATO</a></li>
         </ul>
     </section>
 
     <section id="contato">
+        <div class="contact-btn d-flex">
+            <span class="btn-gradient d-flex justify-content-center align-items-center">
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp d-flex justify-content-center align-items-center"></i>
+                </a>
+            </span>
+        </div>
+
         <div class="titulo-contato">
             <h2>Entre em Contato</h2>
         </div>
@@ -119,7 +113,7 @@
             <div id="info-contato">
                 <div class="info-box-contato">
                     <span><i class="fa-solid fa-house"></i>Endereço</span>
-                    <p>Tv. Angustura, 1356 - Pedreira, Belém - PA</p>
+                    <p>Rua XXXXXXX, nº XXX - Bairro Exemplo, Cidade Fictícia - UF</p>
                 </div>
 
                 <div class="info-box-contato">
@@ -129,11 +123,11 @@
 
                 <div class="info-box-contato">
                     <span><i class="fa-solid fa-envelope"></i>Email</span>
-                    <a href="#">viladoce@.com</a>
+                    <a href="#">loremipsum@.com</a>
                 </div>
             </div>
 
-            <div id="form-contato">
+            <div id="form-contact">
                 <form action="" method="post">
                     <label for="nome">Nome:</label>
                     <input id="nome" type="text" name="nome" autocomplete="off" placeholder="Seu nome">
