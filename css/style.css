@@ -490,6 +490,7 @@
     color: var(--cor-terciaria);
 }
 
+
 @media (max-width: 992px) {
     #kit-party .card {
         width: 31%;
@@ -507,7 +508,7 @@
         width: 100%;
         margin-top: 20px;
         text-align: justify;
-    }
+    }   
 }
 
 @media (max-width: 466px) {
